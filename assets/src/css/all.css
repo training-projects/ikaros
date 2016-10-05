@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /************************************************************************************!
  *  FONT AWESOME
  ************************************************************************************/
@@ -3419,8 +3418,65 @@ a.thumbnail.active {
 /* BASE */
 /* @import 'base/fonts'; */
 /* ----------------------------------------------
-    FONTS
+    ALLER
 ---------------------------------------------- */
+@font-face {
+  font-family: 'allerbold';
+  src: url("$font-path-aller/aller_bd.woff2") format("woff2"), url("$font-path-aller/aller_bd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'allerbold_italic';
+  src: url("$font-path-aller/aller_bdit.woff2") format("woff2"), url("$font-path-aller/aller_bdit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'aller_displayregular';
+  src: url("$font-path-aller/allerdisplay.woff2") format("woff2"), url("$font-path-aller/allerdisplay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'alleritalic';
+  src: url("$font-path-aller/aller_it.woff2") format("woff2"), url("$font-path-aller/aller_it.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'aller_lightregular';
+  src: url("$font-path-aller/aller_lt.woff2") format("woff2"), url("$font-path-aller/aller_lt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'aller_lightitalic';
+  src: url("$font-path-aller/aller_ltit.woff2") format("woff2"), url("$font-path-aller/aller_ltit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'allerregular';
+  src: url("$font-path-aller/aller_rg.woff2") format("woff2"), url("$font-path-aller/aller_rg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* ----------------------------------------------
+    DROIDSANS
+---------------------------------------------- */
+@font-face {
+  font-family: 'droid_sansregular';
+  src: url("$font-path-droidsans/droidsans.woff2") format("woff2"), url("$font-path-droidsans/droidsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'droid_sansbold';
+  src: url("$font-path-droidsans/droidsans-bold.woff2") format("woff2"), url("$font-path-droidsans/droidsans-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
     RESET
 --------------------------------------------------------------*/
@@ -3730,8 +3786,16 @@ textarea#comment,
 /* Calcula porcentagem de margens e paddings */
 /* Converte as fontes para em */
 /* ----------------------------------------------
-    VARIÁVEIS
+    VARIABLES
 ---------------------------------------------- */
+/* Paths
+// -------------------------------------------- */
+/* Tipography
+// -------------------------------------------- */
+/* 	Color Palette
+// -------------------------------------------- */
+/* Media Queries
+// -------------------------------------------- */
 /* ----------------------------------------------
     MIXINS
 ---------------------------------------------- */
