@@ -1,9 +1,49 @@
 /* ----------------------------------------------
 	HEADER
 ---------------------------------------------- */
+.navbar-top {
+	background-color: $grey;
+	border-bottom: 5px solid #4a4d50;
+	border-color: none;
+	border-radius: 0;
 
-/* ###### HEADER ###### */
-.navbar-brand {
-	margin-left: 0px !important;
-	padding: 0;
+	& .logo {
+		margin: 0;
+		padding: 25px 0 24px 0;
+	}
+}
+
+.menu-header {
+	float: right;
+
+	@media #{$screen-sm-max} {
+		background: none;
+		float: left;
+	}			
+
+	> .item > .link {
+		background: transparent url(../images/bgs/menu-line.png) repeat-y right top;
+		color: #d4d4d4;
+		display: block;
+		font-family: $aller-bd;
+		font-size: 13px;
+		padding: 45px 20px 35px;
+		text-transform: uppercase;
+
+		&:hover {
+			color: #5e7c8f;			
+		}
+
+		&:focus,
+		&:active {
+			background-color: #35373a;
+			color: #5e7c8f;
+
+		}
+
+		@media #{$screen-sm-max} {
+			background: none;
+			padding: 15px 10px;
+		}		
+	}
 }
