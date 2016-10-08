@@ -5656,14 +5656,22 @@ a.thumbnail.active {
 /*--------------------------------------------------------------
     RESET
 --------------------------------------------------------------*/
-.panel-title > a:after {
-  content: "\e259";
-  float: right;
-  font-family: 'Glyphicons Halflings';
-  font-size: 7pt;
-  line-height: 2;
-  color: silver; }
+a:hover,
+a:focus,
+a:active {
+  outline: none; }
 
+input::-moz-focus-inner {
+  border: 0; }
+
+/*.panel-title > a:after { 
+	content: "\e259"; 
+	float: right; 
+	font-family: 'Glyphicons Halflings'; 
+	font-size: 7pt; 
+	line-height: 2; 
+	color: silver;
+}*/
 /* COMPONENTS */
 /* ----------------------------------------------
 	BUTTONS
@@ -5982,35 +5990,61 @@ textarea#comment,
 .navbar-top {
   background-color: #3a3d40;
   border-bottom: 5px solid #4a4d50;
-  border-color: none;
+  border: none;
   border-radius: 0; }
   .navbar-top .logo {
     margin: 0;
     padding: 25px 0 24px 0; }
+    @media (max-width: 767px) {
+      .navbar-top .logo {
+        padding: 10px 0 20px 10px; } }
+
+.navbar-header > .hamburguer {
+  border-color: #86acc4;
+  color: #86acc4;
+  font-size: 18px;
+  margin: 15px 10px 0 0;
+  padding: 5px 10px; }
+  .navbar-header > .hamburguer:hover, .navbar-header > .hamburguer:focus {
+    background-color: #86acc4;
+    color: #2f3235; }
 
 .menu-header {
   float: right; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .menu-header {
       background: none;
       float: left; } }
+  .menu-header > .item {
+    background: transparent url(../images/bgs/menu-line.png) repeat-y right top; }
+    @media (max-width: 767px) {
+      .menu-header > .item {
+        background: none; } }
+    .menu-header > .item:first-child {
+      border-left: 1px solid #2c2e30; }
+      @media (max-width: 767px) {
+        .menu-header > .item:first-child {
+          border: none; } }
   .menu-header > .item > .link {
-    background: transparent url(../images/bgs/menu-line.png) repeat-y right top;
     color: #d4d4d4;
     display: block;
     font-family: "allerbold";
     font-size: 13px;
-    padding: 45px 20px 35px;
+    padding: 43px 20px 25px 20px;
     text-transform: uppercase; }
     .menu-header > .item > .link:hover {
       color: #5e7c8f; }
+      @media (max-width: 767px) {
+        .menu-header > .item > .link:hover {
+          background-color: #2c2e30; } }
     .menu-header > .item > .link:focus, .menu-header > .item > .link:active {
-      background-color: #35373a;
+      background-color: #2c2e30;
       color: #5e7c8f; }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .menu-header > .item > .link {
         background: none;
-        padding: 15px 10px; } }
+        padding: 15px 10px;
+        width: 360px; } }
 
 /* ----------------------------------------------
 	FOOTER
