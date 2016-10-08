@@ -1,11 +1,19 @@
 /*--------------------------------------------------------------
     RESET
 --------------------------------------------------------------*/
-.panel-title > a:after { 
+a:hover,
+a:focus, 
+a:active {
+	outline: none;
+}
+
+input::-moz-focus-inner { border: 0; }
+
+/*.panel-title > a:after { 
 	content: "\e259"; 
 	float: right; 
 	font-family: 'Glyphicons Halflings'; 
 	font-size: 7pt; 
 	line-height: 2; 
 	color: silver;
-}
+}*/

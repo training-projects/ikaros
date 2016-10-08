@@ -4,32 +4,29 @@
 
 /* Paths
 // -------------------------------------------- */
-$font-path-aller		: '../fonts/aller/';
-$font-path-droidsans	: '../fonts/droidsans/';
-
 $bg-path				: '../images/bgs/';
 
 /* Tipography
 // -------------------------------------------- */
-$aller_rg		: 'allerregular';
-$aller_dp_rg	: 'aller_displayregular';
-$aller_it		: 'alleritalic';
-$aller_lg_rg	: 'aller_lightregular';
-$aller_lg_it	: 'aller_lightitalic';
-$aller_bd		: 'allerbold';
-$aller_bd_it	: 'allerbold_italic';
+$aller-rg		: 'allerregular';
+$aller-dp-rg	: 'aller_displayregular';
+$aller-it		: 'alleritalic';
+$aller-lg-rg	: 'aller_lightregular';
+$aller-lg-it	: 'aller_lightitalic';
+$aller-bd		: 'allerbold';
+$aller-bd-it	: 'allerbold_italic';
 
-$droid_rg		: 'droid_sansregular'; 
-$droid_bd		: 'droid_sansbold';
+$droid-rg		: 'droid_sansregular'; 
+$droid-bd		: 'droid_sansbold';
 
 /* 	Color Palette
 // -------------------------------------------- */
 $white		: #fff;
 $black		: #000;
-$blue		: #864cc4;
+$blue		: #86acc4;
 $grey		: #3a3d40;
-$light_gray	: #3a3d40;
-$dark_grey	: #2f3235;
+$light-gray	: #3a3d40;
+$dark-grey	: #2f3235;
 
 /* Media Queries
 // -------------------------------------------- */
