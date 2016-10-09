@@ -84,6 +84,12 @@
  *  MY CUSTOM STYLES @theandersonn \o/
  ************************************************************************************/ 
 
+/* HELPERS */
+@import 'helpers/functions';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
+
 /* BASE */
 /* @import 'base/fonts'; */
 @import 'base/fonts';
@@ -95,11 +101,6 @@
 @import 'components/navigation';
 @import 'components/sliders';
 @import 'components/wordpress';
-
-/* HELPERS */
-@import 'helpers/functions';
-@import 'helpers/variables';
-@import 'helpers/mixins';
 
 /* LAYOUT */
 @import 'layout/header';

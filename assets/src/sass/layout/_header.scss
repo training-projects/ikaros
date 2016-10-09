@@ -67,7 +67,9 @@
 		text-transform: uppercase;
 
 		&:hover {
+			background-color: #2c2e30;
 			color: #5e7c8f;
+			transition: color .4s;
 
 			@media #{$screen-xs-max} {
 				background-color: #2c2e30;

@@ -5591,6 +5591,32 @@ a.thumbnail.active {
 /************************************************************************************!
  *  MY CUSTOM STYLES @theandersonn \o/
  ************************************************************************************/
+/* HELPERS */
+/* ----------------------------------------------
+    FUNCTIONS
+---------------------------------------------- */
+/* Calcula porcentagem de margens e paddings */
+/* Converte as fontes para em */
+/* ----------------------------------------------
+    VARIABLES
+---------------------------------------------- */
+/* Paths
+// -------------------------------------------- */
+/* Tipography
+// -------------------------------------------- */
+/* 	Color Palette
+// -------------------------------------------- */
+/* Media Queries
+// -------------------------------------------- */
+/* ----------------------------------------------
+    MIXINS
+---------------------------------------------- */
+/* ----------------------------------------------
+    PLACEHOLDER SELECTORS
+---------------------------------------------- */
+.list-posts > .item > .meta, .list-tweets > .item > .meta {
+  display: block; }
+
 /* BASE */
 /* @import 'base/fonts'; */
 /* ----------------------------------------------
@@ -5664,6 +5690,15 @@ a:active {
 input::-moz-focus-inner {
   border: 0; }
 
+body {
+  font-size: 16px;
+  font-family: "allerregular"; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 /*.panel-title > a:after { 
 	content: "\e259"; 
 	float: right; 
@@ -5676,9 +5711,32 @@ input::-moz-focus-inner {
 /* ----------------------------------------------
 	BUTTONS
 ---------------------------------------------- */
+.btn-blue {
+  background-color: #86acc4;
+  box-shadow: 0px 0px 0px 1px #2f3235;
+  color: #fff;
+  font-size: 13px;
+  line-height: 27px;
+  padding: 0 21px; }
+  .btn-blue:hover {
+    color: #fff;
+    text-decoration: underline; }
+
 /* ----------------------------------------------
-	STRUCTURE FORM
+	FORMS
 ---------------------------------------------- */
+/* form custom */
+.form-custom {
+  background-color: #272B2E;
+  border-color: #272B2E;
+  font-size: 10px;
+  line-height: 15px;
+  margin-bottom: 10px; }
+  .form-custom:focus {
+    border-color: #777;
+    box-shadow: none; }
+
+/* structure form */
 #responsive-form {
   max-width: 600px;
   margin: 0 auto;
@@ -5727,46 +5785,6 @@ input::-moz-focus-inner {
 .wpcf7-validation-errors, .wpcf7-mail-sent-ok {
   display: inline-block; }
 
-/*.wpcf7-submit {
-	float: right;
-	background: #CA0002;
-	color: #fff;
-	text-transform: uppercase;
-	border: none;
-	padding: 8px 20px;
-	cursor: pointer;
-}
-
-.wpcf7-submit:hover {
-	background: #ff0000;
-}*/
-/*span.wpcf7-not-valid-tip {
-	text-shadow: none;
-	font-size: 12px;
-	color: #fff;
-	background: #ff0000;
-	padding: 5px;
-}*/
-/*div.wpcf7-validation-errors { 
-	text-shadow: none;
-	border: transparent;
-	background: #f9cd00;
-	padding: 5px;
-	color: #9C6533;
-	text-align: center;
-	margin: 0;
-	font-size: 12px;
-}*/
-/*div.wpcf7-mail-sent-ok {
-	text-align: center;
-	text-shadow: none;
-	padding: 5px;
-	font-size: 12px;
-	background: #59a80f;
-	border-color: #59a80f;
-	color: #fff;
-	margin: 0;
-}*/
 /* ----------------------------------------------
 	NAVIGATION
 ---------------------------------------------- */
@@ -5963,26 +5981,6 @@ textarea#comment,
   .not-found {
     font-size: 40px; } }
 
-/* HELPERS */
-/* ----------------------------------------------
-    FUNCTIONS
----------------------------------------------- */
-/* Calcula porcentagem de margens e paddings */
-/* Converte as fontes para em */
-/* ----------------------------------------------
-    VARIABLES
----------------------------------------------- */
-/* Paths
-// -------------------------------------------- */
-/* Tipography
-// -------------------------------------------- */
-/* 	Color Palette
-// -------------------------------------------- */
-/* Media Queries
-// -------------------------------------------- */
-/* ----------------------------------------------
-    MIXINS
----------------------------------------------- */
 /* LAYOUT */
 /* ----------------------------------------------
 	HEADER
@@ -6033,7 +6031,9 @@ textarea#comment,
     padding: 43px 20px 25px 20px;
     text-transform: uppercase; }
     .menu-header > .item > .link:hover {
-      color: #5e7c8f; }
+      background-color: #2c2e30;
+      color: #5e7c8f;
+      transition: color .4s; }
       @media (max-width: 767px) {
         .menu-header > .item > .link:hover {
           background-color: #2c2e30; } }
@@ -6049,10 +6049,47 @@ textarea#comment,
 /* ----------------------------------------------
 	FOOTER
 ---------------------------------------------- */
-/* ###### FOOTER ###### */
-.footer {
-  background-color: #F8F8F8;
-  padding: 30px; }
+.footer-box {
+  background-color: #3a3d40;
+  padding-bottom: 40px; }
+  .footer-box .title {
+    color: white;
+    font-family: "allerbold";
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  .footer-box .paragraph {
+    color: #c9c9c9;
+    font-size: 15px; }
+
+.list-posts > .item, .list-tweets > .item {
+  background: transparent url(../images/bgs/footer-line.png) repeat-x center top;
+  padding: 8px 25px 8px 0; }
+  .list-posts > .item:first-child, .list-tweets > .item:first-child {
+    background: none; }
+
+.list-posts > .item > .link, .list-tweets > .item > .link {
+  color: #c9c9c9;
+  font-size: 15px;
+  line-height: 24px; }
+  .list-posts > .item > .link:hover, .list-tweets > .item > .link:hover {
+    color: #86acc4;
+    text-decoration: none; }
+
+.list-posts > .item > .meta, .list-tweets > .item > .meta {
+  color: #c9c9c9;
+  font-family: "allerbold";
+  font-size: 13px;
+  margin: 6px 0; }
+
+.list-tweets > .item:before {
+  content: "";
+  background: transparent url(../images/icons/icon-tweets.png) no-repeat center left;
+  padding-left: 24px; }
+
+.list-tweets > .item > .meta {
+  color: #86acc4;
+  display: inline-block; }
 
 /* PAGES */
 /*--------------------------------------------------------------

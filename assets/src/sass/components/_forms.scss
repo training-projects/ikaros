@@ -1,6 +1,22 @@
 /* ----------------------------------------------
-	STRUCTURE FORM
+	FORMS
 ---------------------------------------------- */
+
+/* form custom */
+.form-custom {
+	background-color: #272B2E;
+	border-color: #272B2E;
+	font-size: 10px;
+	line-height: 15px;
+	margin-bottom: 10px;
+
+	&:focus {
+		border-color: #777;
+		box-shadow: none;	
+	}	
+}
+
+/* structure form */
 #responsive-form {
 	max-width: 600px;
 	margin: 0 auto;
@@ -63,47 +79,3 @@
 .wpcf7-validation-errors, .wpcf7-mail-sent-ok {
 	display: inline-block;
 }
-
-/*.wpcf7-submit {
-	float: right;
-	background: #CA0002;
-	color: #fff;
-	text-transform: uppercase;
-	border: none;
-	padding: 8px 20px;
-	cursor: pointer;
-}
-
-.wpcf7-submit:hover {
-	background: #ff0000;
-}*/
-
-/*span.wpcf7-not-valid-tip {
-	text-shadow: none;
-	font-size: 12px;
-	color: #fff;
-	background: #ff0000;
-	padding: 5px;
-}*/
-
-/*div.wpcf7-validation-errors { 
-	text-shadow: none;
-	border: transparent;
-	background: #f9cd00;
-	padding: 5px;
-	color: #9C6533;
-	text-align: center;
-	margin: 0;
-	font-size: 12px;
-}*/
-
-/*div.wpcf7-mail-sent-ok {
-	text-align: center;
-	text-shadow: none;
-	padding: 5px;
-	font-size: 12px;
-	background: #59a80f;
-	border-color: #59a80f;
-	color: #fff;
-	margin: 0;
-}*/

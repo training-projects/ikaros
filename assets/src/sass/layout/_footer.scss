@@ -1,9 +1,71 @@
 /* ----------------------------------------------
 	FOOTER
 ---------------------------------------------- */
+.footer-box {
+	background-color: $grey;
+	padding-bottom: 40px;
 
-/* ###### FOOTER ###### */
-.footer {
-	background-color: #F8F8F8;
-	padding: 30px;
+	& .title {
+		color: white;
+		font-family: $aller-bd;
+		font-size: 14px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+
+	& .paragraph {
+		color: #c9c9c9;
+		font-size: 15px;
+	}
+}
+
+.list-posts {
+	
+	> .item {
+		background: transparent url(../images/bgs/footer-line.png) repeat-x center top;
+		padding: 8px 25px 8px 0;
+
+		&:first-child {
+			background: none;
+		}
+	}
+
+	> .item > .link {
+		color: #c9c9c9;
+		font-size: 15px;
+		line-height: 24px;
+
+		&:hover {
+			color: $blue;
+			text-decoration: none;
+		}
+	}
+
+	> .item > .meta {
+		@extend %display-block; 
+		
+		color: #c9c9c9;
+		font-family: $aller-bd;
+		font-size: 13px;
+		margin: 6px 0;
+	}
+
+}
+
+.list-tweets {
+	@extend .list-posts;
+
+	> .item {
+
+		&:before {
+	    content: "";
+	    background: transparent url(../images/icons/icon-tweets.png) no-repeat center left;
+	    padding-left: 24px;
+		}
+	}
+
+	> .item > .meta {
+		color: $blue;
+		display: inline-block;
+	}
 }
