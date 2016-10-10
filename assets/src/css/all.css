@@ -5614,7 +5614,7 @@ a.thumbnail.active {
 /* ----------------------------------------------
     PLACEHOLDER SELECTORS
 ---------------------------------------------- */
-.list-posts > .item > .meta, .list-tweets > .item > .meta {
+.item-post > .meta {
   display: block; }
 
 /* BASE */
@@ -6062,34 +6062,27 @@ textarea#comment,
     color: #c9c9c9;
     font-size: 15px; }
 
-.list-posts > .item, .list-tweets > .item {
+.item-post {
   background: transparent url(../images/bgs/footer-line.png) repeat-x center top;
   padding: 8px 25px 8px 0; }
-  .list-posts > .item:first-child, .list-tweets > .item:first-child {
+  .item-post:first-child {
     background: none; }
-
-.list-posts > .item > .link, .list-tweets > .item > .link {
-  color: #c9c9c9;
-  font-size: 15px;
-  line-height: 24px; }
-  .list-posts > .item > .link:hover, .list-tweets > .item > .link:hover {
-    color: #86acc4;
-    text-decoration: none; }
-
-.list-posts > .item > .meta, .list-tweets > .item > .meta {
-  color: #c9c9c9;
-  font-family: "allerbold";
-  font-size: 13px;
-  margin: 6px 0; }
-
-.list-tweets > .item:before {
-  content: "";
-  background: transparent url(../images/icons/icon-tweets.png) no-repeat center left;
-  padding-left: 24px; }
-
-.list-tweets > .item > .meta {
-  color: #86acc4;
-  display: inline-block; }
+  .item-post.-icontweet:before {
+    content: "";
+    background: transparent url(../images/bgs/bg-tweets.png) no-repeat center left;
+    padding-left: 24px; }
+  .item-post > .link {
+    color: #c9c9c9;
+    font-size: 15px;
+    line-height: 24px; }
+    .item-post > .link:hover {
+      color: #86acc4;
+      text-decoration: none; }
+  .item-post > .meta {
+    color: #c9c9c9;
+    font-family: "allerbold";
+    font-size: 13px;
+    margin: 6px 0; }
 
 /* PAGES */
 /*--------------------------------------------------------------

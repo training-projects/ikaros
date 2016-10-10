@@ -7,7 +7,7 @@
 	border: none;
 	border-radius: 0;
 
-	& .logo {
+	.logo {
 		margin: 0;
 		padding: 25px 0 24px 0;
 
@@ -42,7 +42,7 @@
 	}	
 
 	> .item {
-		background: transparent url(../images/bgs/menu-line.png) repeat-y right top;
+		background: transparent url(#{$bg-path}/menu-line.png) repeat-y right top;
 
 		@media #{$screen-xs-max} {
 			background: none;
