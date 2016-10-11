@@ -20,11 +20,10 @@ ul {
 	padding: 0; 
 }
 
-/*.panel-title > a:after { 
-	content: "\e259"; 
-	float: right; 
-	font-family: 'Glyphicons Halflings'; 
-	font-size: 7pt; 
-	line-height: 2; 
-	color: silver;
-}*/
+hr {
+	border: none;
+	background: transparent url(#{$bg-path}/line.png) repeat-x;
+	height: 3px;
+	margin-top: 30px;
+	margin-bottom: 50px;	
+}
