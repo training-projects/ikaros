@@ -1,16 +1,23 @@
 /* ----------------------------------------------
 	BUTTONS
 ---------------------------------------------- */
-.btn-blue {
-	background-color: $blue;
-	box-shadow: 0px 0px 0px 1px #2f3235;
-	color: $white;
-	font-size: 13px;
-	line-height: 27px;
-	padding: 0 21px;
+.btn-custom {
+	padding: 4px 21px;
+
+	&.-blue {
+		background-color: $blue;
+		color: $white;
+		font-size: 13px;
+		transition: all 0.5s ease;
+	}
 
 	&:hover {
+		background-color: #6b8ca0;
 		color: $white;
-		text-decoration: underline;
+	}
+
+	&:focus {
+		background-color: $blue;
+		border: 1px solid transparent;
 	}
 }

@@ -1,36 +1,46 @@
 /* ----------------------------------------------
 	FOOTER
 ---------------------------------------------- */
-.footer-box {
+
+/* ### footer main ### */
+.footer-main {
 	background-color: $grey;
+	border-top: 5px solid #272B2E;
+	border-bottom: 2px solid #272B2E;	
 	padding-bottom: 40px;
 
-	& .title {
-		color: white;
+	.title {
+		color: $white;
 		font-family: $aller-bd;
 		font-size: 14px;
 		margin-bottom: 20px;
 		text-transform: uppercase;
 	}
 
-	& .paragraph {
+	.paragraph {
 		color: #c9c9c9;
 		font-size: 15px;
 	}
 }
 
-.list-posts {
+.item-post {
+	background: transparent url(#{$bg-path}/footer-line.png) repeat-x center top;
+	padding: 8px 25px 8px 0;	
 	
-	> .item {
-		background: transparent url(../images/bgs/footer-line.png) repeat-x center top;
-		padding: 8px 25px 8px 0;
-
-		&:first-child {
-			background: none;
-		}
+	&:first-child {
+		background: none;
+		padding-top: 0;
 	}
 
-	> .item > .link {
+	&.-icontweet {
+		&:before {
+	    	content: "";
+	    	background: transparent url(#{$bg-path}/bg-tweets.png) no-repeat center left;
+	    	padding-left: 24px;	
+	    }	
+	}	
+
+	> .link {
 		color: #c9c9c9;
 		font-size: 15px;
 		line-height: 24px;
@@ -39,9 +49,10 @@
 			color: $blue;
 			text-decoration: none;
 		}
+
 	}
 
-	> .item > .meta {
+	> .meta {
 		@extend %display-block; 
 		
 		color: #c9c9c9;
@@ -52,20 +63,48 @@
 
 }
 
-.list-tweets {
-	@extend .list-posts;
+/* ### footer secondary ### */
+.footer-secondary {
+	background-color: #2F3336;
+	padding: 19px 0 14px 0;
 
-	> .item {
+	.paragraph {
+		color: #c9c9c9;
+		font-size: 14px;
 
-		&:before {
-	    content: "";
-	    background: transparent url(../images/icons/icon-tweets.png) no-repeat center left;
-	    padding-left: 24px;
+		@media #{$screen-xs-max} {
+			text-align: center;
 		}
 	}
 
-	> .item > .meta {
+	.link {
 		color: $blue;
-		display: inline-block;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
+}
+
+.social-networks {
+	float: right;
+
+	> .item {
+		border: 1px solid transparent;
+		float: left;
+		margin-left: 6px;
+
+		&:hover {
+			border: 1px solid #c9c9c9;
+			border-radius: 2px;
+			transition: all 0.5s ease;
+		}
+	}
+
+	@media #{$screen-xs-max} {
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}	
 }
