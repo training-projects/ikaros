@@ -5121,21 +5121,10 @@ a:active {
 input::-moz-focus-inner {
   border: 0; }
 
-body {
-  font-size: 16px;
-  font-family: "allerregular"; }
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-
-hr {
-  border: none;
-  background: transparent url(../images/bgs/line.png) repeat-x;
-  height: 3px;
-  margin-top: 30px;
-  margin-bottom: 50px; }
 
 /* COMPONENTS */
 /* ----------------------------------------------
@@ -5557,6 +5546,17 @@ textarea#comment,
 /*--------------------------------------------------------------
     GENERAL
 --------------------------------------------------------------*/
+body {
+  font-size: 16px;
+  font-family: "allerregular"; }
+
+.dividersection {
+  border: none;
+  background: transparent url(../images/bgs/line.png) repeat-x;
+  height: 3px;
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
 /* ----------------------------------------------
     HOME
 ---------------------------------------------- */
@@ -5576,8 +5576,17 @@ textarea#comment,
   line-height: 28px;
   margin-bottom: 30px; }
 
-.customers-box > .item {
-  float: left;
-  margin-left: 110px; }
-  .customers-box > .item:first-child {
-    margin-left: 0; }
+.customers-logos {
+  padding-bottom: 80px;
+  text-align: center; }
+  .customers-logos > .item {
+    float: left;
+    width: 16.66%; }
+    @media (max-width: 479px) {
+      .customers-logos > .item {
+        margin-bottom: 30px;
+        width: 50%; } }
+    @media (min-width: 480px) and (max-width: 991px) {
+      .customers-logos > .item {
+        margin-bottom: 30px;
+        width: 33.33%; } }

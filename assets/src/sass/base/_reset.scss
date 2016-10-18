@@ -9,21 +9,8 @@ a:active {
 
 input::-moz-focus-inner { border: 0; }
 
-body { 
-	font-size: 16px; 
-	font-family: $aller-rg;
-}
-
 ul { 
 	list-style: none; 
 	margin: 0; 
 	padding: 0; 
-}
-
-hr {
-	border: none;
-	background: transparent url(#{$bg-path}/line.png) repeat-x;
-	height: 3px;
-	margin-top: 30px;
-	margin-bottom: 50px;	
 }

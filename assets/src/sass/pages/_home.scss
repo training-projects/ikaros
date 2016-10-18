@@ -21,13 +21,22 @@
 	margin-bottom: 30px;		
 }
 
-.customers-box {
+.customers-logos {
+	padding-bottom: 80px;
+	text-align: center;
+	
 	> .item {
 		float: left;
-		margin-left: 110px;
+		width: 16.66%;
 
-		&:first-child {
-		margin-left: 0;
+		@media #{$screen-xxxs} {
+			margin-bottom: 30px;
+			width: 50%;
 		}
+
+		@media #{$screen-xs} and #{$screen-sm-max} {
+			margin-bottom: 30px;
+			width: 33.33%;
+		}	
 	}
 } 
