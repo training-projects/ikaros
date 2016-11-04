@@ -1,43 +1,44 @@
 /*--------------------------------------------------------------
-    CONCATENATE ALL FILES .JS
+    CONCATENA JS
 --------------------------------------------------------------*/
 // plugins
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 
 gulp.task('concatjs', function() {
-    return gulp.src([
+  return gulp.src([
 
-        // HELPERS
-        '../assets/src/js/helpers/html5shiv.js',
-        '../assets/src/js/helpers/respond.js',
+    // HELPERS
+    '../src/assets/js/helpers/html5shiv.js',
+    '../src/assets/js/helpers/respond.js',
 
-        // JQUERY
-        '../assets/src/js/libs/jquery/jquery-2.2.4.js',
-        
-        // BOOTSTRAP    
-        // '../assets/src/js/libs/bootstrap/affix.js',
-        // '../assets/src/js/libs/bootstrap/alert.js',
-        // '../assets/src/js/libs/bootstrap/button.js',
-        // '../assets/src/js/libs/bootstrap/carousel.js',
-        '../assets/src/js/libs/bootstrap/collapse.js',
-        // '../assets/src/js/libs/bootstrap/dropdown.js',
-        // '../assets/src/js/libs/bootstrap/modal.js',
-        // '../assets/src/js/libs/bootstrap/popover.js', Esse sapeca está com treta :(
-        // '../assets/src/js/libs/bootstrap/scrollspy.js',
-        // '../assets/src/js/libs/bootstrap/tab.js',
-        // '../assets/src/js/libs/bootstrap/tooltip.js',
-        '../assets/src/js/libs/bootstrap/transition.js',
+    // JQUERY
+    '../src/assets/js/libs/jquery/jquery-2.2.4.js',
+    
+    // BOOTSTRAP    
+    // '../src/assets/js/libs/bootstrap/affix.js',
+    // '../src/assets/js/libs/bootstrap/alert.js',
+    // '../src/assets/js/libs/bootstrap/button.js',
+    // '../src/assets/js/libs/bootstrap/carousel.js',
+    '../src/assets/js/libs/bootstrap/collapse.js',
+    // '../src/assets/js/libs/bootstrap/dropdown.js',
+    // '../src/assets/js/libs/bootstrap/modal.js',
+    // '../src/assets/js/libs/bootstrap/popover.js', Esse sapeca está com treta :(
+    // '../src/assets/js/libs/bootstrap/scrollspy.js',
+    // '../src/assets/js/libs/bootstrap/tab.js',
+    // '../src/assets/js/libs/bootstrap/tooltip.js',
+    '../src/assets/js/libs/bootstrap/transition.js',
 
-        // FANCYBOX
-        // '../assets/src/js/libs/fancybox/jquery.fancybox.js',        
+    // FANCYBOX
+    // '../src/assets/js/libs/fancybox/jquery.fancybox.js',        
 
-        // OWL CAROUSEL
-        '../assets/src/js/libs/owl-carousel/owl.carousel.js',
+    // OWL CAROUSEL
+    '../src/assets/js/libs/owl-carousel/owl.carousel.js',
 
-        // FUNCTIONS
-        '../assets/src/js/functions/functions.js'
+    // FUNCTIONS
+    '../src/assets/js/functions/functions.js'
+
   ])
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('../assets/src/js/'));
+    .pipe(gulp.dest('../src/assets/js/'));
 });

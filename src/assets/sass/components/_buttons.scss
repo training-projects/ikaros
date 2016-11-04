@@ -1,0 +1,16 @@
+/* ----------------------------------------------
+	BUTTONS
+---------------------------------------------- */
+.btn-blue {
+	background-color: $blue;
+	box-shadow: 0px 0px 0px 1px #2f3235;
+	color: $white;
+	font-size: 13px;
+	line-height: 27px;
+	padding: 0 21px;
+
+	&:hover {
+		color: $white;
+		text-decoration: underline;
+	}
+}

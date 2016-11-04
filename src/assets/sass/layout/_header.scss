@@ -1,0 +1,92 @@
+/* ----------------------------------------------
+	HEADER
+---------------------------------------------- */
+.navbar-top {
+	background-color: $grey;
+	border-bottom: 5px solid #4a4d50;
+	border: none;
+	border-radius: 0;
+
+	.logo {
+		margin: 0;
+		padding: 25px 0 24px 0;
+
+		@media #{$screen-xs-max} {
+			padding: 10px 0 20px 10px;
+		}
+	}
+}
+
+.navbar-header {
+	> .hamburguer {
+		border-color: $blue;
+		color: $blue;
+		font-size: 18px;
+		margin: 15px 10px 0 0;
+		padding: 5px 10px;
+
+		&:hover,
+		&:focus {
+			background-color: $blue;
+			color: $dark-grey;		
+		}	
+	}
+}
+
+.menu-header {
+	float: right;
+
+	@media #{$screen-xs-max} {
+		background: none;
+		float: left;
+	}	
+
+	> .item {
+		background: transparent url(#{$bg-path}/menu-line.png) repeat-y right top;
+
+		@media #{$screen-xs-max} {
+			background: none;
+		}
+
+		&:first-child {
+			border-left: 1px solid #2c2e30;
+			
+			@media #{$screen-xs-max} {
+				border: none;
+			}			
+		}
+
+	}		
+
+	> .item > .link {
+		color: #d4d4d4;
+		display: block;
+		font-family: $aller-bd;
+		font-size: 13px;
+		padding: 43px 20px 25px 20px;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: #2c2e30;
+			color: #5e7c8f;
+			transition: color .4s;
+
+			@media #{$screen-xs-max} {
+				background-color: #2c2e30;
+			}					
+		}
+
+		&:focus,
+		&:active {
+			background-color: #2c2e30;
+			color: #5e7c8f;
+
+		}
+
+		@media #{$screen-xs-max} {
+			background: none;
+			padding: 15px 10px;
+			width: 360px;
+		}		
+	}
+}
