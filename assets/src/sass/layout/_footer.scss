@@ -12,14 +12,14 @@
 	.title {
 		color: $white;
 		font-family: $aller-bd;
-		font-size: 14px;
+		font-size: calc-em(14);
 		margin-bottom: 20px;
 		text-transform: uppercase;
 	}
 
 	.paragraph {
 		color: #c9c9c9;
-		font-size: 15px;
+		font-size: calc-em(15);
 	}
 }
 
@@ -42,7 +42,7 @@
 
 	> .link {
 		color: #c9c9c9;
-		font-size: 15px;
+		font-size: calc-em(15);
 		line-height: 24px;
 
 		&:hover {
@@ -57,7 +57,7 @@
 		
 		color: #c9c9c9;
 		font-family: $aller-bd;
-		font-size: 13px;
+		font-size: calc-em(13);
 		margin: 6px 0;
 	}
 
@@ -70,7 +70,7 @@
 
 	.paragraph {
 		color: #c9c9c9;
-		font-size: 14px;
+		font-size: calc-em(14);
 
 		@media #{$screen-xs-max} {
 			text-align: center;

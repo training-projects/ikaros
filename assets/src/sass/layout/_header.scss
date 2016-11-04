@@ -21,7 +21,7 @@
 	> .hamburguer {
 		border-color: $blue;
 		color: $blue;
-		font-size: 18px;
+		font-size: calc-em(18);
 		margin: 15px 10px 0 0;
 		padding: 5px 10px;
 
@@ -62,7 +62,7 @@
 		color: #d4d4d4;
 		display: block;
 		font-family: $aller-bd;
-		font-size: 13px;
+		font-size: calc-em(13);
 		padding: 43px 20px 25px 20px;
 		text-transform: uppercase;
 

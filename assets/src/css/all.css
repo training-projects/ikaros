@@ -5422,7 +5422,7 @@ textarea#comment,
 .navbar-header > .hamburguer {
   border-color: #86acc4;
   color: #86acc4;
-  font-size: 18px;
+  font-size: 1.125em;
   margin: 15px 10px 0 0;
   padding: 5px 10px; }
   .navbar-header > .hamburguer:hover, .navbar-header > .hamburguer:focus {
@@ -5449,7 +5449,7 @@ textarea#comment,
     color: #d4d4d4;
     display: block;
     font-family: "allerbold";
-    font-size: 13px;
+    font-size: 0.8125em;
     padding: 43px 20px 25px 20px;
     text-transform: uppercase; }
     .menu-header > .item > .link:hover {
@@ -5480,12 +5480,12 @@ textarea#comment,
   .footer-main .title {
     color: #fff;
     font-family: "allerbold";
-    font-size: 14px;
+    font-size: 0.875em;
     margin-bottom: 20px;
     text-transform: uppercase; }
   .footer-main .paragraph {
     color: #c9c9c9;
-    font-size: 15px; }
+    font-size: 0.9375em; }
 
 .item-post {
   background: transparent url(../images/bgs/footer-line.png) repeat-x center top;
@@ -5499,7 +5499,7 @@ textarea#comment,
     padding-left: 24px; }
   .item-post > .link {
     color: #c9c9c9;
-    font-size: 15px;
+    font-size: 0.9375em;
     line-height: 24px; }
     .item-post > .link:hover {
       color: #86acc4;
@@ -5507,7 +5507,7 @@ textarea#comment,
   .item-post > .meta {
     color: #c9c9c9;
     font-family: "allerbold";
-    font-size: 13px;
+    font-size: 0.8125em;
     margin: 6px 0; }
 
 /* ### footer secondary ### */
@@ -5516,7 +5516,7 @@ textarea#comment,
   padding: 19px 0 14px 0; }
   .footer-secondary .paragraph {
     color: #c9c9c9;
-    font-size: 14px; }
+    font-size: 0.875em; }
     @media (max-width: 767px) {
       .footer-secondary .paragraph {
         text-align: center; } }
