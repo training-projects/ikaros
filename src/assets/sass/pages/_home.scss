@@ -8,17 +8,17 @@
 }
 
 .pagetitle {
-	color: #555555;
 	font-family: $aller-bd;
-	font-size: 36px;
+	@include fontsize(36);
+	color: #555555;
 }
 
 .pagemeta {
-	color: #555555;
+	margin-bottom: 30px;	
 	font-family: $aller-lg-rg;
-	font-size: 20px;
+	@include fontsize(20);
 	line-height: 28px;
-	margin-bottom: 30px;		
+	color: #555555;		
 }
 
 .customers-logos {
@@ -26,17 +26,17 @@
 	text-align: center;
 	
 	> .item {
+		margin-bottom: 30px;
+		width: 50%;		
 		float: left;
-		width: 16.66%;
 
-		@media #{$screen-xxxs} {
-			margin-bottom: 30px;
-			width: 50%;
+		@media #{$screen-xs} {
+			width: 33.333%;
 		}
-
-		@media #{$screen-xs} and #{$screen-sm-max} {
-			margin-bottom: 30px;
-			width: 33.33%;
+	
+		@media #{$screen-md} {
+			width: 16.666%;
 		}	
+
 	}
 } 
