@@ -1,13 +1,17 @@
 {
-  "name": "gulp-bootstrap",
+  "name": "gulp-boilerplate",
   "version": "1.0.0",
   "devDependencies": {
+    "browser-sync": "^2.17.5",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-clean": "^0.3.2",
+    "gulp-clone": "^1.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "^0.1.7",
-    "gulp-imagemin": "^3.0.3",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
@@ -27,7 +31,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/theandersonn/gulp-bootstrap"
+    "url": "git+https://github.com/theandersonn/gulp-boilerplate.git"
   },
+  "bugs": {
+    "url": "https://github.com/theandersonn/gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/theandersonn/gulp-boilerplate#readme",
   "license": "MIT"
 }

@@ -1,0 +1,84 @@
+/* ----------------------------------------------
+	HEADER
+---------------------------------------------- */
+.navbar-top {
+	background-color: $grey;
+	border-bottom: 5px solid #4a4d50;
+	border: none;
+	border-radius: 0;
+
+	.logo {
+		margin: 0;
+		padding: 10px 0 20px 10px;
+
+		@media #{$screen-sm} {
+			padding: 25px 0 24px 0;
+		}
+	}
+}
+
+.navbar-header {
+	> .hamburguer {
+		margin: 15px 10px 0 0;
+		padding: 5px 10px;
+		font-size: calc-em(18);
+		border-color: $blue;
+		color: $blue;
+
+		&:hover,
+		&:focus {
+			background-color: $blue;
+			color: $dark-grey;		
+		}	
+	}
+}
+
+.menu-header {
+	float: left;
+
+	@media #{$screen-sm} {
+		float: right;
+	}	
+
+	> .item {
+		@media #{$screen-sm} {
+			background: transparent url(#{$bg-path}/menu-line.png) repeat-y right top;
+		}
+
+		&:first-child {
+			@media #{$screen-sm} {
+				border-left: 1px solid #2c2e30;
+			}			
+		}
+
+	}		
+
+	> .item > .link {
+		@include fontsize(13);
+
+		display: block;
+		padding: 15px 10px;
+		width: 360px;
+		color: #d4d4d4;
+		font-family: $aller-bd;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: #2c2e30;
+			color: #5e7c8f;
+			transition: all 0.5s ease;				
+		}
+
+		&:focus,
+		&:active {
+			background-color: #2c2e30;
+			color: #5e7c8f;
+
+		}
+
+		@media #{$screen-sm} {
+			padding: 43px 20px 25px 20px;
+			width: 100%;
+		}		
+	}
+}

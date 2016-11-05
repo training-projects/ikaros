@@ -1,7 +1,17 @@
 /*--------------------------------------------------------------
-    PERFORMS TASKS CSSMIN, JSMIN, CLONE, IMAGEMIN 
+    TASK DEFAULT
 --------------------------------------------------------------*/
 // plugins
 var gulp = require('gulp');
+var browserSync = require('browser-sync');
 
-gulp.task('dist', ['cssmin', 'jsmin', 'buildhtml', 'imagemin', 'clone']);
+gulp.task('server', function(){
+	browserSync.init({
+
+		server: {
+			baseDir: '../src'
+		}
+
+	});
+
+});
