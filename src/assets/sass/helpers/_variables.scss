@@ -1,0 +1,44 @@
+/* ----------------------------------------------
+    VARIABLES
+---------------------------------------------- */
+
+/* Paths
+// -------------------------------------------- */
+$bg-path				: '../images/bgs';
+
+/* Tipography
+// -------------------------------------------- */
+$aller-rg		: 'allerregular';
+$aller-dp-rg	: 'aller_displayregular';
+$aller-it		: 'alleritalic';
+$aller-lg-rg	: 'aller_lightregular';
+$aller-lg-it	: 'aller_lightitalic';
+$aller-bd		: 'allerbold';
+$aller-bd-it	: 'allerbold_italic';
+
+$droid-rg		: 'droid_sansregular'; 
+$droid-bd		: 'droid_sansbold';
+
+/* 	Color Palette
+// -------------------------------------------- */
+$white		: #fff;
+$black		: #000;
+$blue		: #86acc4;
+$grey		: #3a3d40;
+$light-grey	: #3a3d40;
+$dark-grey	: #2f3235;
+
+/* Media Queries
+// -------------------------------------------- */
+$screen-xs   	: '(min-width: 480px)';
+$screen-sm   	: '(min-width: 768px)';
+$screen-md   	: '(min-width: 992px)';
+$screen-lg   	: '(min-width: 1200px)';
+$screen-xlg  	: '(min-width: 1600px)';
+$screen-xxlg 	: '(min-width: 1900px)';
+
+$screen-xs-max  : '(max-width: 767px)';
+$screen-sm-max  : '(max-width: 991px)';
+$screen-md-max  : '(max-width: 1199px)';
+$screen-lg-max  : '(max-width: 1599px)';
+$screen-xlg-max : '(max-width: 1899px)';
