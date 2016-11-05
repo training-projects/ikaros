@@ -2,26 +2,26 @@
 	FOOTER
 ---------------------------------------------- */
 .footer-box {
-	background-color: $grey;
 	padding-bottom: 40px;
-
+	background-color: $grey;
+	
 	.title {
-		color: white;
+		margin-bottom: 20px;		
 		font-family: $aller-bd;
-		font-size: 14px;
-		margin-bottom: 20px;
+		@include fontsize(14);
 		text-transform: uppercase;
+		color: $white;
 	}
 
 	.paragraph {
+		@include fontsize(15);
 		color: #c9c9c9;
-		font-size: 15px;
 	}
 }
 
 .item-post {
-	background: transparent url(#{$bg-path}/footer-line.png) repeat-x center top;
-	padding: 8px 25px 8px 0;	
+	padding: 8px 25px 8px 0;
+	background: transparent url(#{$bg-path}/footer-line.png) repeat-x center top;		
 	
 	&:first-child {
 		background: none;
@@ -30,15 +30,15 @@
 	&.-icontweet {
 		&:before {
 	    	content: "";
-	    	background: transparent url(#{$bg-path}/bg-tweets.png) no-repeat center left;
 	    	padding-left: 24px;	
+	    	background: transparent url(#{$bg-path}/bg-tweets.png) no-repeat center left;
 	    }	
 	}	
 
 	> .link {
-		color: #c9c9c9;
-		font-size: 15px;
+		@include fontsize(15);
 		line-height: 24px;
+		color: #c9c9c9;
 
 		&:hover {
 			color: $blue;
@@ -48,12 +48,11 @@
 	}
 
 	> .meta {
-		@extend %display-block; 
-		
-		color: #c9c9c9;
-		font-family: $aller-bd;
-		font-size: 13px;
+		display: block; 
 		margin: 6px 0;
+		font-family: $aller-bd;
+		@include fontsize(13);		
+		color: #c9c9c9;
 	}
 
 }

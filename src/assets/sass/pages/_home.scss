@@ -2,13 +2,41 @@
     HOME
 ---------------------------------------------- */
 
-/* ###### MAIN ###### */
-.main {
-	margin-bottom: 20px;
-
+/* ###### our customers ###### */
+.customers-box {
+	padding-bottom: 80px;
 }
 
-.col-example {
-	background-color: #F8F8F8;
-	border: 1px solid #ccc;
+.pagetitle {
+	color: #555555;
+	font-family: $aller-bd;
+	font-size: 36px;
 }
+
+.pagemeta {
+	color: #555555;
+	font-family: $aller-lg-rg;
+	font-size: 20px;
+	line-height: 28px;
+	margin-bottom: 30px;		
+}
+
+.customers-logos {
+	padding-bottom: 80px;
+	text-align: center;
+	
+	> .item {
+		float: left;
+		width: 16.66%;
+
+		@media #{$screen-xxxs} {
+			margin-bottom: 30px;
+			width: 50%;
+		}
+
+		@media #{$screen-xs} and #{$screen-sm-max} {
+			margin-bottom: 30px;
+			width: 33.33%;
+		}	
+	}
+} 

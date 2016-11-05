@@ -9,21 +9,21 @@
 
 	.logo {
 		margin: 0;
-		padding: 25px 0 24px 0;
+		padding: 10px 0 20px 10px;
 
-		@media #{$screen-xs-max} {
-			padding: 10px 0 20px 10px;
+		@media #{$screen-sm} {
+			padding: 25px 0 24px 0;
 		}
 	}
 }
 
 .navbar-header {
 	> .hamburguer {
-		border-color: $blue;
-		color: $blue;
-		font-size: 18px;
 		margin: 15px 10px 0 0;
 		padding: 5px 10px;
+		font-size: calc-em(18);
+		border-color: $blue;
+		color: $blue;
 
 		&:hover,
 		&:focus {
@@ -34,46 +34,38 @@
 }
 
 .menu-header {
-	float: right;
+	float: left;
 
-	@media #{$screen-xs-max} {
-		background: none;
-		float: left;
+	@media #{$screen-sm} {
+		float: right;
 	}	
 
 	> .item {
-		background: transparent url(#{$bg-path}/menu-line.png) repeat-y right top;
-
-		@media #{$screen-xs-max} {
-			background: none;
+		@media #{$screen-sm} {
+			background: transparent url(#{$bg-path}/menu-line.png) repeat-y right top;
 		}
 
 		&:first-child {
-			border-left: 1px solid #2c2e30;
-			
-			@media #{$screen-xs-max} {
-				border: none;
+			@media #{$screen-sm} {
+				border-left: 1px solid #2c2e30;
 			}			
 		}
 
 	}		
 
 	> .item > .link {
-		color: #d4d4d4;
 		display: block;
+		padding: 15px 10px;
+		width: 360px;
+		color: #d4d4d4;
 		font-family: $aller-bd;
-		font-size: 13px;
-		padding: 43px 20px 25px 20px;
+		@include fontsize(13);
 		text-transform: uppercase;
 
 		&:hover {
 			background-color: #2c2e30;
 			color: #5e7c8f;
-			transition: color .4s;
-
-			@media #{$screen-xs-max} {
-				background-color: #2c2e30;
-			}					
+			transition: all 0.5s ease;				
 		}
 
 		&:focus,
@@ -83,10 +75,9 @@
 
 		}
 
-		@media #{$screen-xs-max} {
-			background: none;
-			padding: 15px 10px;
-			width: 360px;
+		@media #{$screen-sm} {
+			padding: 43px 20px 25px 20px;
+			width: 100%;
 		}		
 	}
 }
