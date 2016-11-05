@@ -5586,28 +5586,29 @@ body {
   padding-bottom: 80px; }
 
 .pagetitle {
-  color: #555555;
   font-family: "allerbold";
-  font-size: 36px; }
+  font-size: 36px;
+  font-size: 3.6rem;
+  color: #555555; }
 
 .pagemeta {
-  color: #555555;
+  margin-bottom: 30px;
   font-family: "aller_lightregular";
   font-size: 20px;
+  font-size: 2rem;
   line-height: 28px;
-  margin-bottom: 30px; }
+  color: #555555; }
 
 .customers-logos {
   padding-bottom: 80px;
   text-align: center; }
   .customers-logos > .item {
-    float: left;
-    width: 16.66%; }
-    @media (max-width: 479px) {
+    margin-bottom: 30px;
+    width: 50%;
+    float: left; }
+    @media (min-width: 480px) {
       .customers-logos > .item {
-        margin-bottom: 30px;
-        width: 50%; } }
-    @media (min-width: 480px) and (max-width: 991px) {
+        width: 33.333%; } }
+    @media (min-width: 992px) {
       .customers-logos > .item {
-        margin-bottom: 30px;
-        width: 33.33%; } }
+        width: 16.666%; } }
