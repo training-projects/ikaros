@@ -54,13 +54,12 @@
 	}		
 
 	> .item > .link {
-		@include fontsize(13);
-
 		display: block;
 		padding: 15px 10px;
 		width: 360px;
 		color: #d4d4d4;
 		font-family: $aller-bd;
+		@include fontsize(13);
 		text-transform: uppercase;
 
 		&:hover {
