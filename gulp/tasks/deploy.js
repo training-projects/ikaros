@@ -4,8 +4,11 @@
 // plugins
 var gulp = require('gulp');
 var deploy = require("gulp-gh-pages");
+var options = { 
+    remoteUrl: "https://github.com/training-projects/ikaros.github.io.git",
+    branch: "master"};
 
 gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
+    gulp.src("../dist/**/*")
+        .pipe(deploy(options));
 });
