@@ -9,7 +9,6 @@
     "gulp-clone": "^1.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "^0.1.7",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-html-replace": "^1.6.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.1.0",
