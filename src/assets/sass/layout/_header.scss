@@ -32,7 +32,7 @@
 	@extend .nav, .navbar-nav, .navbar-right;	
 }
 
-.menu-item {
+.menu-item { 
 	> .link {
 		font-family: $aller-bd;
 		text-transform: uppercase;
