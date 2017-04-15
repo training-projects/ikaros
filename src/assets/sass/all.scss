@@ -1,20 +1,6 @@
-
-/*  FONT AWESOME v4.6.3
+/* BOOTSTRAP v3.3.7 
  **********************************************/
-@import "libs/awesome/awesome";
-
-/*  FANCYBOX v2.1.5
- **********************************************/
- /* @import "libs/fancybox/fancybox"; */
-
-/*  OWL SLIDER 2.0.0
- **********************************************/
-@import "libs/owl/owl";
-
-/* BOOTSTRAP v3.3.6 
- **********************************************/
-@import "libs/bootstrap/mixins";
-@import "libs/bootstrap/bootstrap";
+@import '../../../gulp/node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 /*  MY CUSTOM STYLES @theandersonn \o/
  **********************************************/ 
@@ -23,18 +9,14 @@
 @import 'helpers/functions';
 @import 'helpers/variables';
 @import 'helpers/mixins';
-@import 'helpers/placeholders';
 
 /* BASE */
-/* @import 'base/fonts'; */
 @import 'base/fonts';
 @import 'base/reset';
 
 /* COMPONENTS */
 @import 'components/buttons';
 @import 'components/forms';
-@import 'components/navigation';
-@import 'components/sliders';
 
 /* LAYOUT */
 @import 'layout/header';

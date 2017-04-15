@@ -30,11 +30,11 @@
 		width: 50%;		
 		float: left;
 
-		@media #{$screen-xs} {
+		@media(min-width: 480px) {
 			width: 33.333%;
 		}
 	
-		@media #{$screen-md} {
+		@media(min-width: 992px) {
 			width: 16.666%;
 		}	
 

@@ -1,5 +1,5 @@
 # Project
 *.DS_Store
 .sass-cache
-node_modules
-dist
+/gulp/node_modules/
+/dist/

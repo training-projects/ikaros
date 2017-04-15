@@ -1,31 +1,6 @@
 (function ( $ ) {
 	'use strict';
 
-	// Lightbox Form
-	// -------------------------	
-	$(function lightboxForm() {
-		$('.fancybox-media').fancybox({
-			openEffect  : 'none',
-			closeEffect : 'none',
-			helpers 	: {
-			media 		: {}
-			}
-		});
-	});	
-
-	// Slider home
-	// -------------------------
-	$(function sliderHome() {
-		$('#owl-carousel').owlCarousel({
-			items: 1,
-	        autoplaySpeed: 1000,
-	        autoplayTimeout: 7000,
-	        autoplay: true,
-	        nav: false,
-	        loop: true  
-		})
-	});
-
 	// Responsive YouTube
 	// ------------------------- 		
 	$(function responsiveYouTube() {
