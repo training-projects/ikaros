@@ -1,6 +1,6 @@
-/* ----------------------------------------------
-	FOOTER
----------------------------------------------- */
+// FOOTER
+// --------------------------------------------------
+
 .footer-box {
 	border-top: 5px solid $gray-dark;
 	background-color: $gray;	
@@ -66,9 +66,6 @@
 }
 
 .form-custom {
-	background-color: #282b2d;
-	border-color: transparent;
-	border-radius: 0;
 	margin-bottom: 1rem;
 	@include fontsize(11);
 	@extend .form-control;

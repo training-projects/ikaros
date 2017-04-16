@@ -12,18 +12,18 @@ gulp.task('concatjs', function() {
     'node_modules/jquery/dist/jquery.js',
     
     // BOOTSTRAP    
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/button.js',
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
-    'node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js', 
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js', Esse sapeca está com treta :(
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
-    // 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
-    'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js', 
+    // '../src/assets/js/functions/affix.js',
+    // '../src/assets/js/functions/alert.js',
+    // '../src/assets/js/functions/button.js',
+    // '../src/assets/js/functions/carousel.js',
+    '../src/assets/js/functions/collapse.js', 
+    // '../src/assets/js/functions/dropdown.js',
+    // '../src/assets/js/functions/modal.js',
+    // '../src/assets/js/functions/popover.js', Esse sapeca está com treta :(
+    // '../src/assets/js/functions/scrollspy.js',
+    // '../src/assets/js/functions/tab.js',
+    // '../src/assets/js/functions/tooltip.js',
+    '../src/assets/js/functions/transition.js', 
 
     // FUNCTIONS
     '../src/assets/js/functions/functions.js'
