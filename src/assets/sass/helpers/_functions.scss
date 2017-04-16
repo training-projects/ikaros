@@ -1,0 +1,7 @@
+/* ----------------------------------------------
+    FUNCTIONS
+---------------------------------------------- */
+/* Calcula porcentagem de margens e paddings */
+@function calc-mg($target-px, $context) {
+  @return ($target-px / $context) * 100%;
+}
