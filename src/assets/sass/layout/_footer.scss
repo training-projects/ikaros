@@ -66,12 +66,13 @@
 }
 
 .form-custom {
+	color: #fff;
 	margin-bottom: 1rem;
 	@include fontsize(11);
 	@extend .form-control;
 
 	&:focus {
 		box-shadow: none;
-		border-color: #272B2E;
+		border-color: #bfbfbf;
 	}
 }

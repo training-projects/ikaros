@@ -37,6 +37,10 @@
 		text-transform: uppercase;
 		@include fontsize(12);
 
+		@media(min-width: 768px) {
+			line-height: 30px;			
+		}		
+
 		@media(min-width: 960px) {
 			line-height: 58px;
 			padding-top: 25px;
