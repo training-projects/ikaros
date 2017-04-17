@@ -4028,13 +4028,16 @@ select[multiple].input-lg,
     padding-top: 1.3rem;
     font-size: 13px;
     font-size: 1.3rem; }
+  @media (min-width: 480px) {
+    .footer-content {
+      display: inline-block;
+      float: none;
+      width: 49.6%;
+      vertical-align: top; } }
   @media (min-width: 768px) {
     .footer-content {
       float: left;
       width: 25%; } }
-  @media (min-width: 480px) and (max-width: 767px) {
-    .footer-content {
-      width: 50%; } }
 
 .posts-list {
   background: url(../images/bgs/footer-line.png) center top repeat-x;

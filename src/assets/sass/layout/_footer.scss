@@ -23,11 +23,15 @@
 	}
 
 	@include make-xs-column(12);
-	@include make-sm-column(3);
-
-	@media(min-width: 480px) and (max-width: 767px) {
-		width: 50%;
+	
+	@media(min-width: 480px) {
+    	display: inline-block;
+		float: none;
+    	width: 49.6%;
+    	vertical-align: top;		
 	}
+	
+	@include make-sm-column(3);
 }
 
 .posts-box {
