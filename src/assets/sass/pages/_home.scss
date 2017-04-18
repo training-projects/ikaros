@@ -19,6 +19,13 @@
 	@include fontsize(30);
 }
 
+/* ###### carousel ###### */
+.carousel-box {
+	@extend .list-unstyled;	
+}
+
+.carousel-item {}
+
 /* ###### our customers ###### */
 .customers-box {
 	padding-bottom: 8rem;

@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+// Libs
+@import "../../../gulp/node_modules/owl-carousel-2/assets/owl.carousel";
+@import "../../../gulp/node_modules/owl-carousel-2/assets/owl.theme.default";
+
 // Helpers
 @import "helpers/variables";
 @import "helpers/functions";

@@ -1,6 +1,19 @@
 (function ( $ ) {
 	'use strict';
 
+	// Carousel Home
+	// ------------------------- 		
+	$(function carouselHome() {
+	    $(".owl-carousel").owlCarousel({
+	        items: 1,
+	        autoplaySpeed: 1000,
+	        autoplayTimeout: 7000,
+	        autoplay: true,
+	        nav: false,
+	        loop: true             
+	    });
+	});	
+
 	// Responsive YouTube
 	// ------------------------- 		
 	$(function responsiveYouTube() {

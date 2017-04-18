@@ -10,6 +10,7 @@ gulp.task('concatjs', function() {
 
     // JQUERY
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/owl-carousel-2/owl.carousel.js',
     
     // BOOTSTRAP    
     // '../src/assets/js/functions/affix.js',
