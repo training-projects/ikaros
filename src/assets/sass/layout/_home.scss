@@ -19,14 +19,28 @@
 	@include fontsize(30);
 }
 
-/* ###### carousel ###### */
+// carousel
+// --------------------------------------------------
 .carousel-box {
 	@extend .list-unstyled;	
 }
 
 .carousel-item {}
 
-/* ###### our customers ###### */
+// our services 
+// --------------------------------------------------
+.tabs-services {
+	text-align: center;
+	@extend .nav, .nav-tabs;
+
+	> li {
+		float: none;
+		display: inline-block;
+	}
+}
+
+// our customers
+// --------------------------------------------------
 .customers-box {
 	padding-bottom: 8rem;
 	text-align: center;

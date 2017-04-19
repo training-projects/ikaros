@@ -9,48 +9,50 @@
 @import "../../../gulp/node_modules/owl-carousel-2/assets/owl.theme.default";
 
 // Base
-@import 'base/fonts';
 @import "base/variables";
-@import "base/functions";
 @import "base/mixins";
 @import 'base/normalize';
+@import 'base/fonts';
 @import 'base/scaffolding';
+//@import "base/code";
 @import 'base/type';
-@import 'base/glyphicons';
-//@import "base/responsive-embed";
-@import "base/responsive-utilities";
-//@import "base/utilities";
+//@import 'base/glyphicons';
 
-// Module
-//@import "module/alerts";
-//@import "module/badges";
-@import "module/breadcrumbs";
-@import "module/button-groups";
-@import "module/buttons";
-//@import "module/carousel";
-//@import "module/close";
-//@import "module/code";
-@import "module/component-animations";
-@import "module/dropdowns";
-@import "module/forms";
-@import "module/input-groups";
-//@import "module/jumbotron";
-//@import "module/labels";
-//@import "module/list-group";
-//@import "module/media";
-//@import "module/modals";
-@import "module/navbar";
-@import "module/navs";
-//@import "module/pager";
-//@import "module/pagination";
-//@import "module/panels";
-//@import "module/popovers";
-//@import "module/print";
-//@import "module/progress-bars";
-//@import "module/tables";
-//@import "module/thumbnails";
-//@import "module/tooltip";
-//@import "module/wells";
+// Utilities
+//@import "utilities/alerts";
+//@import "utilities/close";
+//@import "utilities/media";
+//@import "utilities/responsive-embed";
+@import "utilities/responsive-utilities";
+//@import "utilities/print";
+//@import "utilities/utilities";
+//@import "utilities/functions";
+
+// Modules
+//@import "modules/badges";
+@import "modules/breadcrumbs";
+@import "modules/button-groups";
+@import "modules/buttons";
+//@import "modules/carousel";
+@import "modules/component-animations";
+@import "modules/dropdowns";
+@import "modules/forms";
+@import "modules/input-groups";
+//@import "modules/jumbotron";
+//@import "modules/labels";
+//@import "modules/list-group";
+//@import "modules/modals";
+@import "modules/navbar";
+@import "modules/navs";
+//@import "modules/pager";
+//@import "modules/pagination";
+//@import "modules/panels";
+//@import "modules/popovers";
+//@import "modules/progress-bars";
+//@import "modules/tables";
+//@import "modules/thumbnails";
+//@import "modules/tooltip";
+//@import "modules/wells";
 
 // Layout
 @import "layout/grid";
@@ -61,13 +63,3 @@
 
 // Theme
 //@import "theme/theme";
-
-.tabs-services {
-	text-align: center;
-	@extend .nav, .nav-tabs;
-
-	> li {
-		float: none;
-		display: inline-block;
-	}
-}

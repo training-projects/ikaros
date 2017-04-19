@@ -27,7 +27,7 @@ gulp.task('concatjs', function() {
     '../src/assets/js/functions/transition.js', 
 
     // FUNCTIONS
-    '../src/assets/js/functions/functions.js'
+    '../src/assets/js/functions/general.js'
 
   ])
     .pipe(concat('all.js'))
