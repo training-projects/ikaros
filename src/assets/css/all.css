@@ -3639,7 +3639,14 @@ select[multiple].input-lg,
   margin-left: 4px; }
 
 .home-section {
-  text-align: center; }
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .home-section:before, .home-section:after {
+    content: " ";
+    display: table; }
+  .home-section:after {
+    clear: both; }
   .home-section > .description {
     margin-bottom: 30px;
     font-family: "aller_lightregular";
@@ -3662,7 +3669,8 @@ select[multiple].input-lg,
     display: inline-block; }
 
 .customers-box {
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
   text-align: center; }
   .customers-box > .customers-item {
     margin-bottom: 30px;

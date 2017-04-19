@@ -2,6 +2,7 @@
 // --------------------------------------------------
 .home-section {
 	text-align: center;
+	@include make-row();
 
 	> .description {
 		margin-bottom: 30px;	
@@ -42,7 +43,8 @@
 // our customers
 // --------------------------------------------------
 .customers-box {
-	padding-bottom: 8rem;
+	padding-bottom: 4rem;
+	overflow: hidden;
 	text-align: center;
 	@extend .list-unstyled;
 	
