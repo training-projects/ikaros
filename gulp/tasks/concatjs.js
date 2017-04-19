@@ -22,7 +22,7 @@ gulp.task('concatjs', function() {
     // '../src/assets/js/functions/modal.js',
     // '../src/assets/js/functions/popover.js', Esse sapeca está com treta :(
     // '../src/assets/js/functions/scrollspy.js',
-    // '../src/assets/js/functions/tab.js',
+    '../src/assets/js/functions/tab.js',
     // '../src/assets/js/functions/tooltip.js',
     '../src/assets/js/functions/transition.js', 
 

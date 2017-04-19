@@ -23,44 +23,53 @@
 @import 'base/scaffolding';
 @import 'base/type';
 
-// Components
-//@import "components/alerts";
-//@import "components/badges";
-@import "components/breadcrumbs";
-@import "components/button-groups";
-@import "components/buttons";
-//@import "components/carousel";
-//@import "components/close";
-//@import "components/code";
-@import "components/component-animations";
-@import "components/dropdowns";
-@import "components/forms";
-@import "components/input-groups";
-//@import "components/jumbotron";
-//@import "components/labels";
-//@import "components/list-group";
-//@import "components/media";
-//@import "components/modals";
-@import "components/navbar";
-@import "components/navs";
-//@import "components/pager";
-//@import "components/pagination";
-//@import "components/panels";
-//@import "components/popovers";
-//@import "components/print";
-//@import "components/progress-bars";
-//@import "components/thumbnails";
-//@import "components/tooltip";
-//@import "components/wells";
+// Module
+//@import "module/alerts";
+//@import "module/badges";
+@import "module/breadcrumbs";
+@import "module/button-groups";
+@import "module/buttons";
+//@import "module/carousel";
+//@import "module/close";
+//@import "module/code";
+@import "module/component-animations";
+@import "module/dropdowns";
+@import "module/forms";
+@import "module/input-groups";
+//@import "module/jumbotron";
+//@import "module/labels";
+//@import "module/list-group";
+//@import "module/media";
+//@import "module/modals";
+@import "module/navbar";
+@import "module/navs";
+//@import "module/pager";
+//@import "module/pagination";
+//@import "module/panels";
+//@import "module/popovers";
+//@import "module/print";
+//@import "module/progress-bars";
+//@import "module/tables";
+//@import "module/thumbnails";
+//@import "module/tooltip";
+//@import "module/wells";
 
 // Layout
 @import "layout/grid";
-@import "layout/footer";
+@import "layout/general";
 @import "layout/header";
+@import "layout/footer";
+@import "layout/home";
 
 // Theme
 //@import "theme/theme";
 
-// Pages
-@import "pages/general";
-@import "pages/home";
+.tabs-services {
+	text-align: center;
+	@extend .nav, .nav-tabs;
+
+	> li {
+		float: none;
+		display: inline-block;
+	}
+}
