@@ -2,6 +2,7 @@
 // --------------------------------------------------
 
 .footer-box {
+	padding-bottom: 1.5rem;
 	border-top: 5px solid $gray-dark;
 	background-color: $gray;	
 }
@@ -79,4 +80,64 @@
 		box-shadow: none;
 		border-color: #bfbfbf;
 	}
+}
+
+// SUBFOOTER
+// --------------------------------------------------
+.subfooter-box {
+	border-top: 1px solid #24272a;
+	background-color: $gray-dark;
+}
+
+.subfooter-container {
+	min-height: 5rem;
+	line-height: 5rem;
+
+	@extend .container;	
+
+	@media(min-width: 768px){
+		height: 7rem;
+		line-height: 7rem;
+	}
+}
+
+.subfooter-copyright {
+	text-align: center;
+
+	> .description {
+		color: $gray-light;
+		@include fontsize(13);
+
+		.link {
+			color: $blue;
+		}
+	}
+	
+	@include make-xs-column(12);
+	@include make-sm-column(6);
+
+	@media(min-width: 768px){
+		text-align: left;
+	}
+}
+
+.subfooter-social {
+	text-align: center;
+
+	@include make-xs-column(12);
+	@include make-sm-column(6);
+
+	@media(min-width: 768px){
+		text-align: right; 
+	}	
+}
+
+.subfooter-ul {
+	margin-bottom: 0;
+	@extend .list-unstyled;
+}
+
+.subfooter-list {
+	display: inline-block;
+	margin-left: 4px;
 }
