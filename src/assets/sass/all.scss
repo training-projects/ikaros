@@ -8,20 +8,18 @@
 @import "../../../gulp/node_modules/owl-carousel-2/assets/owl.carousel";
 @import "../../../gulp/node_modules/owl-carousel-2/assets/owl.theme.default";
 
-// Helpers
-@import "helpers/variables";
-@import "helpers/functions";
-@import "helpers/mixins";
-//@import "helpers/responsive-embed";
-@import "helpers/responsive-utilities";
-//@import "helpers/utilities";
-
 // Base
 @import 'base/fonts';
-@import 'base/glyphicons';
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
 @import 'base/normalize';
 @import 'base/scaffolding';
 @import 'base/type';
+@import 'base/glyphicons';
+//@import "base/responsive-embed";
+@import "base/responsive-utilities";
+//@import "base/utilities";
 
 // Module
 //@import "module/alerts";
