@@ -1,31 +1,31 @@
-/* ----------------------------------------------
-    HOME
----------------------------------------------- */
+//	HOME
+// --------------------------------------------------
+.home-section {
+	text-align: center;
+
+	> .description {
+		margin-bottom: 30px;	
+		font-family: $aller-lg-rg;
+		line-height: 28px;
+		color: #555;			
+		@include fontsize(20);
+	}
+}
+
+.title-page {
+	color: #555;
+	font-family: $aller-bd; 
+	font-weight: 700;
+	@include fontsize(30);
+}
 
 /* ###### our customers ###### */
 .customers-box {
-	padding-bottom: 80px;
-}
-
-.pagetitle {
-	font-family: $aller-bd;
-	@include fontsize(36);
-	color: #555555;
-}
-
-.pagemeta {
-	margin-bottom: 30px;	
-	font-family: $aller-lg-rg;
-	@include fontsize(20);
-	line-height: 28px;
-	color: #555555;		
-}
-
-.customers-logos {
-	padding-bottom: 80px;
+	padding-bottom: 8rem;
 	text-align: center;
+	@extend .list-unstyled;
 	
-	> .item {
+	> .customers-item {
 		margin-bottom: 30px;
 		width: 50%;		
 		float: left;

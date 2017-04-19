@@ -1529,7 +1529,7 @@ ol {
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled, .posts-box, .subfooter-ul {
+.list-unstyled, .posts-box, .subfooter-ul, .customers-box {
   padding-left: 0;
   list-style: none; }
 
@@ -4182,37 +4182,34 @@ select[multiple].input-lg,
   margin-bottom: 50px;
   border: none; }
 
-/* ----------------------------------------------
-    HOME
----------------------------------------------- */
+.home-section {
+  text-align: center; }
+  .home-section > .description {
+    margin-bottom: 30px;
+    font-family: "aller_lightregular";
+    line-height: 28px;
+    color: #555;
+    font-size: 20px;
+    font-size: 2rem; }
+
+.title-page {
+  color: #555;
+  font-family: "allerbold";
+  font-weight: 700;
+  font-size: 30px;
+  font-size: 3rem; }
+
 /* ###### our customers ###### */
 .customers-box {
-  padding-bottom: 80px; }
-
-.pagetitle {
-  font-family: "allerbold";
-  font-size: 36px;
-  font-size: 3.6rem;
-  color: #555555; }
-
-.pagemeta {
-  margin-bottom: 30px;
-  font-family: "aller_lightregular";
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 28px;
-  color: #555555; }
-
-.customers-logos {
-  padding-bottom: 80px;
+  padding-bottom: 8rem;
   text-align: center; }
-  .customers-logos > .item {
+  .customers-box > .customers-item {
     margin-bottom: 30px;
     width: 50%;
     float: left; }
     @media (min-width: 480px) {
-      .customers-logos > .item {
+      .customers-box > .customers-item {
         width: 33.333%; } }
     @media (min-width: 992px) {
-      .customers-logos > .item {
+      .customers-box > .customers-item {
         width: 16.666%; } }
