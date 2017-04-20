@@ -14,6 +14,7 @@
 }
 
 .title-page {
+	margin-top: 0;
 	color: #555;
 	font-family: $aller-bd; 
 	font-weight: 700;
@@ -39,7 +40,7 @@
 		float: none;
 		width: 90%;
 		margin-right: 0;
-		margin: 0 auto;
+		margin: 0 auto -1px auto;
 
 		@media(min-width: 414px){
 			width: auto;
@@ -56,8 +57,12 @@
 		@include fontsize(13);
 	}
 
+	> li > a:hover {
+		border: 1px solid #c5c5c5;
+		border-radius: 0;
+	}
+
 	> li > a,
-	> li > a:hover,
 	> li > a:focus,
 	> li.active > a,
 	> li.active > a:focus {
@@ -157,6 +162,95 @@
 			margin-left: 0;
 		}		
 	}
+}
+
+// Latest Blog
+// --------------------------------------------------
+.latest-box {
+	margin-bottom: 2rem;
+	text-align: left;
+	@extend .clearfix;
+	@include make-sm-column(6);
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.date-blog {
+	width: 19%;
+	display: inline-block;
+}
+
+.date-circle {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%; 
+	background-color: #ececec;
+	
+	> .day,
+	> .month {
+		display: block;
+	}
+
+	> .day {
+		line-height: 2.2rem;
+		@include fontsize(22);	
+	}
+
+	> .month {
+		text-transform: uppercase;
+	}
+}
+
+.latest-content {
+	float: right;
+	width: 79%;
+	margin-left: 2%;
+	vertical-align: top;
+	color: #555;
+
+	> .title {
+		margin-top: 0;
+		font-family: $aller-bd;
+		@include fontsize(17);
+	}
+
+	> .description {
+		font-family: $droid-rg;
+		@include fontsize(14);
+	}
+}
+
+.tag-blog {
+	@extend .list-unstyled;
+	display: inline-block;
+
+	> .tag-item {
+		display: inline-block;
+
+		&:after {
+			content: ", ";
+			color: $blue;
+		}
+
+		&:last-child {
+			&:after {
+				content: "";
+			}
+		}
+
+		.link {
+			color: $blue;
+			@include fontsize(11);	
+		}
+	}
+}
+
+.comments-blog {
+	color: $blue;
+	@include fontsize(11);	 
 }
 
 // our customers
