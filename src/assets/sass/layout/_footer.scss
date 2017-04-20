@@ -12,6 +12,7 @@
 		color: #e3e3e3;
 		font-family: $aller-bd;
 		text-transform: uppercase;
+		padding-bottom: 1.3rem;
 		@include fontsize(14);
 	}
 
@@ -19,7 +20,6 @@
 		color: #bfbfbf;
 		font-family: $droid-rg;
 		margin-bottom: 2rem;
-		padding-top: 1.3rem;
 		@include fontsize(13);
 	}
 
@@ -45,6 +45,7 @@
 	padding: 1.3rem 0;
 
 	&:first-of-type {
+		padding-top: 0;
 		background: none;
 	}
 
@@ -106,6 +107,7 @@
 
 	> .description {
 		color: $gray-light;
+		margin-bottom: 0;
 		@include fontsize(13);
 
 		.link {
