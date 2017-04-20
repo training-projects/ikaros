@@ -29,13 +29,93 @@
 
 // our services 
 // --------------------------------------------------
-.tabs-services {
+.tab-service {
+	border-bottom: 1px solid #c5c5c5;
 	text-align: center;
 	@extend .nav, .nav-tabs;
 
 	> li {
 		float: none;
-		display: inline-block;
+		margin-left: -6px;
+		margin-right: 0;
+
+		@media(min-width: 375px){
+			display: inline-block;
+		}
+	}
+
+	> li > a {
+		padding: 6px 24px;
+		color: #555;
+		font-family: $droid-rg;
+		font-weight: 700;
+		@include fontsize(13);
+	}
+
+	> li > a,
+	> li > a:focus,
+	> li.active > a {
+		border: 1px solid #c5c5c5;
+		border-bottom-color: transparent;
+		border-radius: 0;
+	}
+
+	> li > a:hover,
+	> li.active > a:hover {
+		border: 1px solid #c5c5c5;
+	}
+
+	> li.active > a,
+	> li.active > a:focus {
+		color: $blue;
+	}
+}
+
+.tab-box {
+	padding-top: 3rem;
+	@extend .clearfix;
+}
+
+.tab-thumb {
+	@include make-sm-column(5);
+  	padding-left:  0;
+
+	> .thumb {
+		@extend .img-responsive;
+	}
+}
+
+.tab-description {
+	text-align: left;
+	@include make-sm-column(7);
+	padding-right:  0;
+	color: #555;
+	
+	> .title {
+		margin-top: 0;
+		font-family: $aller-bd;
+		@include fontsize(17);		
+	}
+
+	> .description {
+		font-family: $droid-rg;
+		margin-bottom: 2.5rem;
+		@include fontsize(13);
+	}
+}
+
+.tab-ul {
+	@extend .list-unstyled;
+
+	> .item {
+		font-family: $droid-rg;
+		@include fontsize(13);	
+
+		&.-iconchecked:before {
+    		content: "";
+    		padding-left: 24px;
+    		background: url(../images/icons/icon-checked.png) center left no-repeat;
+		}			
 	}
 }
 
