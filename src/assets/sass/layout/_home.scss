@@ -120,6 +120,23 @@
 	}
 }
 
+// latest projects
+// --------------------------------------------------
+.projects-ul {
+	@extend .list-unstyled;
+}
+
+.projects-item {
+	display: inline-block;
+	margin-left: .8rem;
+	margin-bottom: 1.2rem;
+
+	&:first-of-type,   
+	&:nth-child(4) {
+		margin-left: 0;
+	}
+}
+
 // our customers
 // --------------------------------------------------
 .customers-box {

@@ -811,7 +811,7 @@ ol {
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled, .posts-box, .subfooter-ul, .carousel-box, .tab-ul, .customers-box {
+.list-unstyled, .posts-box, .subfooter-ul, .carousel-box, .tab-ul, .projects-ul, .customers-box {
   padding-left: 0;
   list-style: none; }
 
@@ -3779,6 +3779,13 @@ select[multiple].input-lg,
     content: "";
     padding-left: 24px;
     background: url(../images/icons/icon-checked.png) center left no-repeat; }
+
+.projects-item {
+  display: inline-block;
+  margin-left: .8rem;
+  margin-bottom: 1.2rem; }
+  .projects-item:first-of-type, .projects-item:nth-child(4) {
+    margin-left: 0; }
 
 .customers-box {
   padding-bottom: 4rem;
