@@ -1035,7 +1035,7 @@ address {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs {
+  .hidden-xs, .tab-thumb > .thumb {
     display: none !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3709,11 +3709,14 @@ select[multiple].input-lg,
   text-align: center; }
   .tab-service > li {
     float: none;
-    margin-left: -6px;
-    margin-right: 0; }
-    @media (min-width: 375px) {
+    width: 90%;
+    margin-right: 0;
+    margin: 0 auto; }
+    @media (min-width: 414px) {
       .tab-service > li {
-        display: inline-block; } }
+        width: auto;
+        display: inline-block;
+        margin-left: -6px; } }
   .tab-service > li > a {
     padding: 6px 24px;
     color: #555;
@@ -3722,14 +3725,13 @@ select[multiple].input-lg,
     font-size: 13px;
     font-size: 1.3rem; }
   .tab-service > li > a,
+  .tab-service > li > a:hover,
   .tab-service > li > a:focus,
-  .tab-service > li.active > a {
+  .tab-service > li.active > a,
+  .tab-service > li.active > a:focus {
     border: 1px solid #c5c5c5;
     border-bottom-color: transparent;
     border-radius: 0; }
-  .tab-service > li > a:hover,
-  .tab-service > li.active > a:hover {
-    border: 1px solid #c5c5c5; }
   .tab-service > li.active > a,
   .tab-service > li.active > a:focus {
     color: #86acc4; }
@@ -3741,12 +3743,14 @@ select[multiple].input-lg,
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
-  padding-left: 0; }
+  padding-right: 15px; }
   @media (min-width: 768px) {
     .tab-thumb {
       float: left;
       width: 41.66667%; } }
+  @media (min-width: 768px) {
+    .tab-thumb {
+      padding-left: 0; } }
 
 .tab-description {
   text-align: left;
@@ -3754,7 +3758,6 @@ select[multiple].input-lg,
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-right: 0;
   color: #555; }
   @media (min-width: 768px) {
     .tab-description {
@@ -3770,6 +3773,9 @@ select[multiple].input-lg,
     margin-bottom: 2.5rem;
     font-size: 13px;
     font-size: 1.3rem; }
+  @media (min-width: 768px) {
+    .tab-description {
+      padding-right: 0; } }
 
 .tab-ul > .item {
   font-family: "droid_sansregular";
@@ -3782,10 +3788,19 @@ select[multiple].input-lg,
 
 .projects-item {
   display: inline-block;
-  margin-left: .8rem;
-  margin-bottom: 1.2rem; }
+  width: 48%; }
   .projects-item:first-of-type, .projects-item:nth-child(4) {
-    margin-left: 0; }
+    /*margin-left: 0;*/ }
+  @media (min-width: 650px) {
+    .projects-item {
+      width: 31.5%; } }
+  @media (min-width: 992px) {
+    .projects-item {
+      width: auto;
+      margin-left: .8rem;
+      margin-bottom: 1rem; }
+      .projects-item:first-of-type, .projects-item:nth-child(4) {
+        margin-left: 0; } }
 
 .customers-box {
   padding-bottom: 4rem;
