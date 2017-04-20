@@ -811,7 +811,7 @@ ol {
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled, .posts-box, .subfooter-ul, .carousel-box, .tab-ul, .projects-ul, .tag-blog, .customers-box {
+.list-unstyled, .posts-box, .subfooter-ul, .tab-ul, .projects-ul, .tag-blog, .customers-box {
   padding-left: 0;
   list-style: none; }
 
@@ -3704,6 +3704,16 @@ select[multiple].input-lg,
   font-weight: 700;
   font-size: 30px;
   font-size: 3rem; }
+
+.carousel-section {
+  margin-bottom: 3rem; }
+
+.owl-carousel {
+  position: relative; }
+  .owl-carousel .owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 15px; }
 
 .tab-service {
   border-bottom: 1px solid #c5c5c5;

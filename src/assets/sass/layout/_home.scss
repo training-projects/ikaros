@@ -23,11 +23,19 @@
 
 // carousel
 // --------------------------------------------------
-.carousel-box {
-	@extend .list-unstyled;	
+.carousel-section {
+	margin-bottom: 3rem;
 }
 
-.carousel-item {}
+.owl-carousel {
+	position: relative;
+
+	.owl-dots {
+		position: absolute;
+		width: 100%;
+		bottom: 15px;
+	}
+}
 
 // our services 
 // --------------------------------------------------

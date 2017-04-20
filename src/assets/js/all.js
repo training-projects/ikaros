@@ -13403,6 +13403,7 @@ return jQuery;
 	        autoplayTimeout: 7000,
 	        autoplay: true,
 	        nav: false,
+	        navText: ['<','>'],
 	        loop: true             
 	    });
 	});	
