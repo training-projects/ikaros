@@ -70,7 +70,7 @@
 		@media(min-width: 414px){
 			width: auto;
 			display: inline-block;
-			margin-left: -6px;
+			margin-left: -4px;
 		}
 	}
 
@@ -165,11 +165,13 @@
 // --------------------------------------------------
 .projects-ul {
 	@extend .list-unstyled;
+	text-align: center;
 }
 
 .projects-item {
 	display: inline-block;
 	width: 48%;
+	margin-left: .2rem;
 
 	@media(min-width: 650px){
 		width: 31.5%;
@@ -178,8 +180,8 @@
 	@media(min-width: 992px){
 		width: auto;
 
-		margin-left: .8rem;
-		margin-bottom: .8rem;
+		margin-left: .6rem;
+		margin-bottom: .4rem;
 		
 		&:first-of-type,   
 		&:nth-child(4) {
