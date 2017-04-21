@@ -1,27 +1,3 @@
-//	HOME
-// --------------------------------------------------
-.home-section {
-	text-align: center;
-	@extend .clearfix;
-	@include make-row();
-
-	> .description {
-		margin-bottom: 30px;	
-		font-family: $aller-lg-rg;
-		line-height: 28px;
-		color: #555;			
-		@include fontsize(20);
-	}
-}
-
-.title-page {
-	margin-top: 0;
-	color: #555;
-	font-family: $aller-bd; 
-	font-weight: 700;
-	@include fontsize(30);
-}
-
 // carousel
 // --------------------------------------------------
 .carousel-section {

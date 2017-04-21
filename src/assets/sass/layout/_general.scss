@@ -1,5 +1,28 @@
 //	GENERAL
 // --------------------------------------------------
+.page-section {
+	@extend .clearfix;
+	@include make-row();
+
+	> .title {
+		margin-top: 0;
+		color: #555;
+		font-family: $aller-bd; 
+		font-weight: 700;
+		text-align: center;
+		@include fontsize(30);
+	}
+
+	> .description {
+		margin-bottom: 30px;	
+		font-family: $aller-lg-rg;
+		line-height: 28px;
+		color: #555;			
+		text-align: center;
+		@include fontsize(20);
+	}
+}
+
 .divider-section {
 	height: .3rem;
 	margin-top: 3rem;

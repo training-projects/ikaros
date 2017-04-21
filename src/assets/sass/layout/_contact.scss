@@ -1,0 +1,8 @@
+.contact-content {
+	@include make-sm-column(8);
+}
+
+
+.contact-sidebar {
+	@include make-sm-column(4);
+}
