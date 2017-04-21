@@ -2,6 +2,7 @@
 // --------------------------------------------------
 .home-section {
 	text-align: center;
+	@extend .clearfix;
 	@include make-row();
 
 	> .description {
@@ -29,11 +30,51 @@
 
 .owl-carousel {
 	position: relative;
+	@extend .owl-theme;
+	@extend .list-unstyled;
 
 	.owl-dots {
 		position: absolute;
 		width: 100%;
 		bottom: 15px;
+
+		.owl-dot > span {
+			background-color: transparent;
+			border: 2px solid #f3f3f3;
+		}
+
+		.owl-dot.active > span {
+			background-color: #f3f3f3;
+			border: 2px solid #f3f3f3;
+		}		
+	}
+
+	.owl-nav {
+		> .owl-prev,
+		> .owl-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 35px;
+			height: 35px;
+			border-radius: 50%; 
+			background-color: #f3f3f3;
+			font-size: 20px;
+			color: #000;
+		}
+
+		> .owl-prev:hover,
+		> .owl-next:hover {
+			background-color: $blue;
+		}		
+
+		> .owl-prev {
+			left: 0;
+		}
+
+		> .owl-next {
+			right: 0;
+		}
 	}
 }
 
@@ -58,11 +99,15 @@
 	}
 
 	> li > a {
-		padding: 6px 24px;
+		padding: 10px 24px;
 		color: #555;
 		font-family: $droid-rg;
 		font-weight: 700;
 		@include fontsize(13);
+
+		@media(min-width: 414px){
+			padding: 6px 24px;
+		}
 	}
 
 	> li > a:hover {
@@ -150,11 +195,6 @@
 	display: inline-block;
 	width: 48%;
 
-	&:first-of-type,   
-	&:nth-child(4) {
-		/*margin-left: 0;*/
-	}
-
 	@media(min-width: 650px){
 		width: 31.5%;
 	}
@@ -163,7 +203,7 @@
 		width: auto;
 
 		margin-left: .8rem;
-		margin-bottom: 1rem;
+		margin-bottom: .8rem;
 		
 		&:first-of-type,   
 		&:nth-child(4) {
@@ -177,23 +217,28 @@
 .latest-box {
 	margin-bottom: 2rem;
 	text-align: left;
-	@extend .clearfix;
+	@include make-xs-column(12);
 	@include make-sm-column(6);
 	padding-right: 0;
 	padding-left: 0;
+	@extend .clearfix;
 }
 
 .date-blog {
-	width: 19%;
-	display: inline-block;
+	width: 48px;
+	float: left;
+
+	@media(min-width: 360px) {
+		width: 54px;
+	}
 }
 
 .date-circle {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	width: 55px;
-	height: 55px;
+	width: 48px;
+	height: 48px;
 	border-radius: 50%; 
 	background-color: #ececec;
 	
@@ -210,14 +255,17 @@
 	> .month {
 		text-transform: uppercase;
 	}
+
+	@media(min-width: 360px) {
+		width: 54px;
+		height: 54px;
+	}
 }
 
 .latest-content {
-	float: right;
-	width: 79%;
-	margin-left: 2%;
-	vertical-align: top;
 	color: #555;
+	@include make-xs-column(10)
+	@include make-sm-column(10)
 
 	> .title {
 		margin-top: 0;
@@ -232,8 +280,9 @@
 }
 
 .tag-blog {
-	@extend .list-unstyled;
 	display: inline-block;
+	margin-bottom: 0;
+	@extend .list-unstyled;
 
 	> .tag-item {
 		display: inline-block;
@@ -258,7 +307,11 @@
 
 .comments-blog {
 	color: $blue;
-	@include fontsize(11);	 
+	@include fontsize(11);
+
+	&:before {
+		content: "| ";
+	}	 
 }
 
 // our customers
