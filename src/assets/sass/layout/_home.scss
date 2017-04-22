@@ -70,7 +70,7 @@
 		@media(min-width: 414px){
 			width: auto;
 			display: inline-block;
-			margin-left: -4px;
+			margin-left: -3px;
 		}
 	}
 
@@ -171,7 +171,7 @@
 .projects-item {
 	display: inline-block;
 	width: 48%;
-	margin-left: .2rem;
+	margin-left: .4rem;
 
 	@media(min-width: 650px){
 		width: 31.5%;
@@ -180,8 +180,8 @@
 	@media(min-width: 992px){
 		width: auto;
 
-		margin-left: .6rem;
-		margin-bottom: .4rem;
+		margin-left: .8rem;
+		margin-bottom: .2rem;
 		
 		&:first-of-type,   
 		&:nth-child(4) {
@@ -254,6 +254,15 @@
 	> .description {
 		font-family: $droid-rg;
 		@include fontsize(14);
+
+		.link {
+			color: #555;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
@@ -288,7 +297,7 @@
 	@include fontsize(11);
 
 	&:before {
-		content: "| ";
+		content: " | ";
 	}	 
 }
 
