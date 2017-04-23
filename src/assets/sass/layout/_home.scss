@@ -195,11 +195,15 @@
 .latest-box {
 	margin-bottom: 2rem;
 	text-align: left;
+	@extend .clearfix;
 	@include make-xs-column(12);
 	@include make-sm-column(6);
 	padding-right: 0;
 	padding-left: 0;
-	@extend .clearfix;
+
+	@media(min-width: 680px) {
+		width: 50%;
+	}
 }
 
 .date-blog {
@@ -304,7 +308,6 @@
 // our customers
 // --------------------------------------------------
 .customers-box {
-	padding-bottom: 4rem;
 	overflow: hidden;
 	text-align: center;
 	@extend .list-unstyled;

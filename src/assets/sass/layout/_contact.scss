@@ -2,7 +2,55 @@
 	@include make-sm-column(8);
 }
 
-
 .contact-sidebar {
+	margin-top: 3rem;
 	@include make-sm-column(4);
+	padding-left: 2rem;
+	
+	.title {
+		font-family: $aller-bd;
+		margin-top: 0;
+		text-transform: uppercase;
+		@include fontsize(16);
+	}
+
+	.description {
+		color: #555;
+		@include fontsize(13);
+
+		.meta {
+			color: #6b99b6;
+			font-weight: 700;
+		}
+	}
+
+	@media(min-width: 768px) {
+		margin-top: 0;
+		background: transparent url(../images/bgs/line.png) repeat-y;
+	}
+}
+
+.sub-title {
+	color: #555;
+	font-family: $aller-bd; 
+	font-weight: 700;
+	@include fontsize(26);
+}
+
+.description-page {
+	margin-bottom: 3rem;	
+	font-family: $aller-lg-rg;
+	line-height: 2rem;			
+	@include fontsize(16);
+}
+
+.form-page {
+	border-radius: .2rem;
+	@include fontsize(13);
+	@extend .form-control;
+
+	&:focus {
+		box-shadow: none;
+		border-color: #bfbfbf;
+	}	 	
 }

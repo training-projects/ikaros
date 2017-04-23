@@ -1,24 +1,16 @@
 /*--------------------------------------------------------------
     EXECUTA SASS
 --------------------------------------------------------------*/
-// plugins
-'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var plumber = require('gulp-plumber');
-var gutil = require('gulp-util');
+var gulp 		= require('gulp');
+var sass 		= require('gulp-sass');
+var notify 		= require("gulp-notify");
 var browserSync = require('browser-sync');
 
 // tasks
 gulp.task('sass', function () {
-  gulp.src('../src/assets/sass/**/*.scss')
-
-    .pipe(plumber(function(error) {
-        gutil.log(gutil.colors.red(error.message));
-        this.emit('end');
-    }))
-
-    .pipe(sass().on('Erro de Sintaxe', sass.logError))
+  return gulp.src('../src/assets/sass/**/*.scss')
+    .pipe(sass())
+    .on("error", notify.onError({title:"Ai, tu quebrou o SASS!"}))
     .pipe(gulp.dest('../src/assets/css/'))
 });

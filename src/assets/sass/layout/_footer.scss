@@ -2,6 +2,7 @@
 // --------------------------------------------------
 
 .footer-box {
+	margin-top: 4rem;
 	padding-bottom: 1.5rem;
 	border-top: 5px solid $gray-dark;
 	background-color: $gray;	
@@ -72,7 +73,8 @@
 
 .form-custom {
 	background-color: #282b2d;
-	border: 1px solid transparent;
+	border: .1rem solid transparent;
+	border-radius: .2rem;
 	color: #fff;
 	margin-bottom: 1rem;
 	@include fontsize(11);
