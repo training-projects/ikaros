@@ -504,6 +504,51 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+/* ----------------------------------------------
+    FONTELLO
+---------------------------------------------- */
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?6032583");
+  src: url("../fonts/fontello.eot?6032583#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?6032583") format("woff2"), url("../fonts/fontello.woff?6032583") format("woff"), url("../fonts/fontello.ttf?6032583") format("truetype"), url("../fonts/fontello.svg?6032583#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-calendar:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-comment-empty:before {
+  content: '\f0e5'; }
+
+/* '' */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -550,7 +595,7 @@ figure {
 img {
   vertical-align: middle; }
 
-.img-responsive, .tab-thumb > .thumb {
+.img-responsive, .tab-thumb > .thumb, .card-blog > .thumb {
   display: block;
   max-width: 100%;
   height: auto; }
@@ -2996,6 +3041,92 @@ select[multiple].input-lg,
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
+.pagination, .pagination-blog {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px; }
+  .pagination > li, .pagination-blog > li {
+    display: inline; }
+    .pagination > li > a, .pagination-blog > li > a,
+    .pagination > li > span, .pagination-blog > li > span {
+      position: relative;
+      float: left;
+      padding: 6px 12px;
+      line-height: 1.3;
+      text-decoration: none;
+      color: #6b889c;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      margin-left: -1px; }
+    .pagination > li:first-child > a, .pagination-blog > li:first-child > a,
+    .pagination > li:first-child > span, .pagination-blog > li:first-child > span {
+      margin-left: 0;
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px; }
+    .pagination > li:last-child > a, .pagination-blog > li:last-child > a,
+    .pagination > li:last-child > span, .pagination-blog > li:last-child > span {
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px; }
+  .pagination > li > a:hover, .pagination-blog > li > a:hover, .pagination > li > a:focus, .pagination-blog > li > a:focus,
+  .pagination > li > span:hover, .pagination-blog > li > span:hover,
+  .pagination > li > span:focus, .pagination-blog > li > span:focus {
+    z-index: 2;
+    color: #4b6170;
+    background-color: #eeeeee;
+    border-color: #ddd; }
+  .pagination > .active > a, .pagination-blog > .active > a, .pagination > .active > a:hover, .pagination-blog > .active > a:hover, .pagination > .active > a:focus, .pagination-blog > .active > a:focus,
+  .pagination > .active > span, .pagination-blog > .active > span,
+  .pagination > .active > span:hover, .pagination-blog > .active > span:hover,
+  .pagination > .active > span:focus, .pagination-blog > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: #6b889c;
+    border-color: #6b889c;
+    cursor: default; }
+  .pagination > .disabled > span, .pagination-blog > .disabled > span,
+  .pagination > .disabled > span:hover, .pagination-blog > .disabled > span:hover,
+  .pagination > .disabled > span:focus, .pagination-blog > .disabled > span:focus,
+  .pagination > .disabled > a, .pagination-blog > .disabled > a,
+  .pagination > .disabled > a:hover, .pagination-blog > .disabled > a:hover,
+  .pagination > .disabled > a:focus, .pagination-blog > .disabled > a:focus {
+    color: #bfbfbf;
+    background-color: #fff;
+    border-color: #ddd;
+    cursor: not-allowed; }
+
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33333; }
+
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px; }
+
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px; }
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5; }
+
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
+
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px; }
+
 .container, .subfooter-container {
   margin-right: auto;
   margin-left: auto;
@@ -3876,14 +4007,12 @@ select[multiple].input-lg,
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-right: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0; }
   @media (min-width: 768px) {
     .latest-box {
       float: left;
@@ -3987,6 +4116,59 @@ select[multiple].input-lg,
     @media (min-width: 992px) {
       .customers-box > .customers-item {
         width: 16.666%; } }
+
+.card-box {
+  margin-top: 3rem; }
+  @media (min-width: 432px) {
+    .card-box {
+      display: inline-block;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+      vertical-align: top;
+      width: 48%; } }
+  @media (min-width: 768px) {
+    .card-box {
+      position: relative;
+      min-height: 1px;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .card-box {
+      float: left;
+      width: 33.33333%; } }
+
+.card-blog {
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  background-color: #f7f7f7; }
+  .card-blog > .card-main {
+    padding: 0 2rem; }
+    .card-blog > .card-main > .title {
+      font-family: "allerbold";
+      font-size: 15px;
+      font-size: 1.5rem; }
+    .card-blog > .card-main > .description {
+      line-height: 2rem;
+      font-size: 13px;
+      font-size: 1.3rem; }
+    .card-blog > .card-main > .card-footer {
+      height: 3.8rem;
+      line-height: 3.8rem;
+      background: transparent url(../images/bgs/line.png) top center repeat-x;
+      color: #a3a3a3;
+      font-family: "droid_sansregular";
+      font-size: 11px;
+      font-size: 1.1rem; }
+      .card-blog > .card-main > .card-footer > .time {
+        display: inline-block;
+        width: 65%; }
+      .card-blog > .card-main > .card-footer > .comment {
+        text-align: right;
+        display: inline-block;
+        width: 33%; }
+
+.pagination-blog {
+  margin-left: .8rem; }
 
 .contact-content {
   position: relative;

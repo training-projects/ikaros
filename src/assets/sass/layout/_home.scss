@@ -196,10 +196,8 @@
 	margin-bottom: 2rem;
 	text-align: left;
 	@extend .clearfix;
-	@include make-xs-column(12);
-	@include make-sm-column(6);
-	padding-right: 0;
-	padding-left: 0;
+	@include make-xs-column(12, 0);
+	@include make-sm-column(6, 0);
 
 	@media(min-width: 680px) {
 		width: 50%;

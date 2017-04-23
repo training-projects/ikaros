@@ -45,7 +45,7 @@
 @import "modules/navbar";
 @import "modules/navs";
 //@import "modules/pager";
-//@import "modules/pagination";
+@import "modules/pagination";
 //@import "modules/panels";
 //@import "modules/popovers";
 //@import "modules/progress-bars";
@@ -60,6 +60,7 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/home";
+@import "layout/blog";
 @import "layout/contact";
 
 // Theme

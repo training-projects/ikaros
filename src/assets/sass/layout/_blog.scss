@@ -1,0 +1,65 @@
+.card-box {
+	margin-top: 3rem;
+	
+	@media(min-width: 432px) {
+		display: inline-block;
+		padding-left: 0.2rem;
+    	padding-right: 0.2rem;
+    	vertical-align: top;	
+		width: 48%;
+	}
+	
+	@media(min-width: 768px) {
+		@include make-sm-column(4, 1.5rem);
+	}
+}
+
+.card-blog {
+	border: 1px solid #e8e8e8;
+	border-radius: 2px; 
+	background-color: #f7f7f7;
+
+	> .thumb {
+		@extend .img-responsive;
+	}
+
+	> .card-main {
+		padding: 0 2rem;
+
+		> .title {
+			font-family: $aller-bd;
+			@include fontsize(15);	
+		}
+
+		> .description {
+			line-height: 2rem;
+			@include fontsize(13);	
+		}
+
+		> .card-footer {
+			height: 3.8rem;
+			line-height: 3.8rem;
+			background: transparent url(../images/bgs/line.png) top center repeat-x;
+			color: #a3a3a3;
+			font-family: $droid-rg;
+			@include fontsize(11);		
+
+			> .time {
+				display: inline-block;
+				width: 65%;
+			}
+
+			> .comment {
+				text-align: right;
+				display: inline-block;
+				width: 33%;
+			}
+		}
+	}
+
+}
+
+.pagination-blog {
+	margin-left: .8rem;
+	@extend .pagination;
+}
