@@ -47,3 +47,29 @@
 .sidebar-box {
 	@include make-sm-column(4);	
 }
+
+// Related posts
+.related-posts {
+	> .title {
+		font-family: $aller-bd;
+		margin-bottom: 1.5rem;
+		@include fontsize(14);
+	}
+}
+
+.related-ul {
+	@extend .list-unstyled;
+	
+	> .related-item {
+		display: inline-block;
+
+		&:first-of-type {
+			margin-left: -4px;
+		}
+
+		.thumb {
+			width: 150px;
+			height: 110px;
+		}
+	}
+}

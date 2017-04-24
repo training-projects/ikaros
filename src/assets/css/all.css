@@ -856,7 +856,7 @@ ol {
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled, .posts-box, .subfooter-ul, .owl-carousel, .tab-ul, .projects-ul, .tag-blog, .customers-box {
+.list-unstyled, .posts-box, .subfooter-ul, .owl-carousel, .tab-ul, .projects-ul, .tag-blog, .customers-box, .related-ul {
   padding-left: 0;
   list-style: none; }
 
@@ -4224,6 +4224,20 @@ select[multiple].input-lg,
     .sidebar-box {
       float: left;
       width: 33.33333%; } }
+
+.related-posts > .title {
+  font-family: "allerbold";
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.related-ul > .related-item {
+  display: inline-block; }
+  .related-ul > .related-item:first-of-type {
+    margin-left: -4px; }
+  .related-ul > .related-item .thumb {
+    width: 150px;
+    height: 110px; }
 
 .contact-content {
   position: relative;
