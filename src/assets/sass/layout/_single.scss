@@ -1,0 +1,7 @@
+.single-box {
+	@include make-sm-column(8);
+}
+
+.sidebar-box {
+	@include make-sm-column(4);	
+}
