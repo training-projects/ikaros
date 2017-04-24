@@ -1,5 +1,47 @@
 .single-box {
 	@include make-sm-column(8);
+
+	> .thumb {
+		margin: 2rem 0;
+		@extend .img-responsive;
+	}
+
+	> p {
+		line-height: 2rem;
+		margin-bottom: 2rem;
+		@include fontsize(15);		
+	}
+}
+
+.single-header {
+	.single-title {
+		display: inline-block;
+    	width: 86%;
+    	margin-left: 10px;
+
+		.title {
+			font-family: $aller-bd;
+			margin-top: .8rem;
+			margin-bottom: 0;
+			@include fontsize(20);
+		}    	
+	}
+}
+
+.date-single {
+	width: 7rem;
+	@extend .date-blog;
+}
+
+.single-circle {
+	width: 7rem;
+	height: 7rem;
+	@extend .date-circle;
+}
+
+.divider-header {
+	margin: 1rem 0 .5rem 0;
+	@extend .divider-section;
 }
 
 .sidebar-box {

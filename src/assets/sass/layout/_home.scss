@@ -275,6 +275,8 @@
 
 	> .tag-item {
 		display: inline-block;
+		color: #a7a7a7;
+		@include fontsize(11);	
 
 		&:after {
 			content: ", ";
@@ -289,7 +291,6 @@
 
 		.link {
 			color: $blue;
-			@include fontsize(11);	
 		}
 	}
 }
