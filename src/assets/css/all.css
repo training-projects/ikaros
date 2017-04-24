@@ -4118,7 +4118,13 @@ select[multiple].input-lg,
         width: 16.666%; } }
 
 .card-box {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
   @media (min-width: 432px) {
     .card-box {
       display: inline-block;

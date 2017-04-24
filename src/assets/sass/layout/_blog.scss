@@ -1,6 +1,7 @@
 .card-box {
 	margin-top: 3rem;
-	
+	@include make-xs-column(12);
+
 	@media(min-width: 432px) {
 		display: inline-block;
 		padding-left: 0.2rem;
