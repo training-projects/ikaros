@@ -3672,6 +3672,16 @@ select[multiple].input-lg,
     font-size: 20px;
     font-size: 2rem; }
 
+.page-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .page-content {
+      float: left;
+      width: 66.66667%; } }
+
 .divider-section, .divider-header {
   height: .3rem;
   margin-top: 3rem;
@@ -3881,8 +3891,8 @@ select[multiple].input-lg,
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background-color: #f3f3f3;
     font-size: 20px;
@@ -4307,16 +4317,6 @@ select[multiple].input-lg,
   @media (min-width: 768px) {
     .related-ul > .related-item {
       width: 24%; } }
-
-.contact-content {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .contact-content {
-      float: left;
-      width: 66.66667%; } }
 
 .sub-title {
   color: #555;

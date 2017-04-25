@@ -23,6 +23,10 @@
 	}
 }
 
+.page-content {
+	@include make-sm-column(8);
+}
+
 .divider-section {
 	height: .3rem;
 	margin-top: 3rem;
