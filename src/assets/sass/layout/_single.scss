@@ -44,10 +44,6 @@
 	@extend .divider-section;
 }
 
-.sidebar-box {
-	@include make-sm-column(4);	
-}
-
 // Related posts
 .related-posts {
 	> .title {
@@ -70,6 +66,52 @@
 		.thumb {
 			width: 150px;
 			height: 110px;
+		}
+	}
+}
+
+// Sidebar
+.sidebar-box {
+	@include make-sm-column(4);	
+}
+
+.sidebar-content {
+	> .title {
+		color: #555;
+		font-family: $aller-bd;
+		text-transform: uppercase;
+		@include fontsize(14);		
+	}
+}
+
+.sidebar-posts {
+	@extend .list-unstyled;
+}
+
+.sidebar-item {
+	margin-bottom: 2rem;
+
+	.thumb {
+		float: left;
+		margin-right: 5px;
+		max-width: 70px;
+		height: 70px;
+	}
+
+	.title-box {
+		display: inline-block;
+		max-width: 210px;
+		font-family: $droid-rg;
+		color: #555;
+	
+		.title {
+			margin-top: 0;
+			display: inline-block;
+			@include fontsize(13);
+		}
+
+		.time {
+			@include fontsize(11);
 		}
 	}
 }

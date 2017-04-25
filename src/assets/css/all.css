@@ -856,7 +856,7 @@ ol {
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled, .posts-box, .subfooter-ul, .owl-carousel, .tab-ul, .projects-ul, .tag-blog, .customers-box, .related-ul {
+.list-unstyled, .posts-box, .subfooter-ul, .owl-carousel, .tab-ul, .projects-ul, .tag-blog, .customers-box, .related-ul, .sidebar-posts {
   padding-left: 0;
   list-style: none; }
 
@@ -4215,16 +4215,6 @@ select[multiple].input-lg,
 .divider-header {
   margin: 1rem 0 .5rem 0; }
 
-.sidebar-box {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .sidebar-box {
-      float: left;
-      width: 33.33333%; } }
-
 .related-posts > .title {
   font-family: "allerbold";
   margin-bottom: 1.5rem;
@@ -4238,6 +4228,44 @@ select[multiple].input-lg,
   .related-ul > .related-item .thumb {
     width: 150px;
     height: 110px; }
+
+.sidebar-box {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .sidebar-box {
+      float: left;
+      width: 33.33333%; } }
+
+.sidebar-content > .title {
+  color: #555;
+  font-family: "allerbold";
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.sidebar-item {
+  margin-bottom: 2rem; }
+  .sidebar-item .thumb {
+    float: left;
+    margin-right: 5px;
+    max-width: 70px;
+    height: 70px; }
+  .sidebar-item .title-box {
+    display: inline-block;
+    max-width: 210px;
+    font-family: "droid_sansregular";
+    color: #555; }
+    .sidebar-item .title-box .title {
+      margin-top: 0;
+      display: inline-block;
+      font-size: 13px;
+      font-size: 1.3rem; }
+    .sidebar-item .title-box .time {
+      font-size: 11px;
+      font-size: 1.1rem; }
 
 .contact-content {
   position: relative;
