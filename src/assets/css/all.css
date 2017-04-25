@@ -4305,6 +4305,7 @@ select[multiple].input-lg,
 
 .related-ul > .related-item {
   display: inline-block;
+  margin-left: 4px;
   width: 31%; }
   .related-ul > .related-item:first-of-type {
     margin-left: 0; }
