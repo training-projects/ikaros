@@ -4227,7 +4227,7 @@ select[multiple].input-lg,
     height: 70px; }
   .sidebar-item .title-box {
     display: inline-block;
-    width: 140px;
+    max-width: 135px;
     font-family: "droid_sansregular";
     color: #555; }
     .sidebar-item .title-box .title {
@@ -4244,7 +4244,7 @@ select[multiple].input-lg,
       font-size: 1.2rem; }
     @media (min-width: 992px) {
       .sidebar-item .title-box {
-        width: 210px; } }
+        max-width: 205px; } }
   @media (min-width: 992px) {
     .sidebar-item {
       margin-bottom: 3rem; } }

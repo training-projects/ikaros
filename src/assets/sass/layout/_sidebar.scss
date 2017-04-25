@@ -44,7 +44,7 @@
 
 	.title-box {
 		display: inline-block;
-		width: 140px;
+		max-width: 135px;
 		font-family: $droid-rg;
 		color: #555;
 	
@@ -65,7 +65,7 @@
 		}
 
 		@media(min-width: 992px){
-			width: 210px;
+			max-width: 205px;
 		}
 	}
 
