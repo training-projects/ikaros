@@ -1,0 +1,75 @@
+.sidebar-box {
+	margin-top: 3rem;
+	@include make-sm-column(4);
+	padding-left: 2rem;
+	
+	@media(min-width: 768px) {
+		margin-top: 0;
+		background: transparent url(../images/bgs/line.png) repeat-y;
+	}
+}
+
+.sidebar-content {
+	> .title {
+		color: #555;
+		font-family: $aller-bd;
+		text-transform: uppercase;
+		@include fontsize(16);		
+	}
+
+	> .description {
+		color: #555;
+		@include fontsize(14);
+
+		.meta {
+			color: #6b99b6;
+			font-weight: 700;
+		}
+	}
+}
+
+.sidebar-posts {
+	@extend .list-unstyled;
+}
+
+.sidebar-item {
+	margin-bottom: 2rem;
+
+	.thumb {
+		float: left;
+		margin-right: 5px;
+		max-width: 70px;
+		height: 70px;
+	}
+
+	.title-box {
+		display: inline-block;
+		width: 140px;
+		font-family: $droid-rg;
+		color: #555;
+	
+		.title {
+			margin-top: 0;
+			margin-bottom: 0;
+			display: inline-block;
+			@include fontsize(13);
+		}
+
+		.link {
+			color: #555;
+		}
+
+		.time {
+			color: #a7a7a7;
+			@include fontsize(12);
+		}
+
+		@media(min-width: 992px){
+			width: 210px;
+		}
+	}
+
+	@media(min-width: 992px){
+		margin-bottom: 3rem;
+	}
+}
