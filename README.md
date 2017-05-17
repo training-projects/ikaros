@@ -2,8 +2,11 @@
 Theme Business &amp; Portfolio
 
 
-| <img src="src/assets/images/general/ikaros-blog.jpg" width="250"/> | <img src="src/assets/images/general/ikaros-blog-single.jpg" width="250"/> | <img src="src/assets/images/general/ikaros-home.jpg" width="250"/> |
-|----------|:-------------:|------:|
+| Section  | Screenshot |
+| -------- | ---------- |
+| header   | ![header](src/assets/images/general/ikaros-header.jpg) |
+| footer   | ![footer](src/assets/images/general/ikaros-footer.jpg) |
+| home     | ![home]() |
 
 
 ## [Download - PSDs](https://drive.google.com/file/d/0B7tB0AtEFK2bcGpId09mdGpWdW8/view?usp=sharing)
