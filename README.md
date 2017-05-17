@@ -1,13 +1,6 @@
 # ikaros
 Theme Business &amp; Portfolio
 
-
-| Section  | Screenshot |
-| -------- | ---------- |
-| header   | ![header](src/assets/images/general/ikaros-header.jpg) |
-| footer   | ![footer](src/assets/images/general/ikaros-footer.jpg) |
-| home     | ![home](src/assets/images/general/ikaros-home.jpg) |
-
 ## [Download - PSDs](https://drive.google.com/file/d/0B7tB0AtEFK2bcGpId09mdGpWdW8/view?usp=sharing)
 
 ## Developers
